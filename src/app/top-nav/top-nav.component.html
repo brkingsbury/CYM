@@ -1,0 +1,19 @@
+<nav class="top-nav">
+    <div class="left-nav">
+      <a routerLink="">
+        <img src="../../assets/horizontal_logo_50px.svg" />
+      </a>
+    </div>
+    <button class="menu-control mobile-only" (click)="menuExpanded = !menuExpanded" [class.expanded]="menuExpanded">
+      <span>Menu</span>
+        <i data-feather="menu"></i>
+        <i data-feather="x"></i>
+    </button>
+    <div class="right-nav" [class.expanded]="menuExpanded">
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/classes" routerLinkActive="active">Classes</a>
+      <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+      <!-- <a routerLink="/contact" routerLinkActive="active">Contact</a> -->
+    </div>
+  </nav>
+  

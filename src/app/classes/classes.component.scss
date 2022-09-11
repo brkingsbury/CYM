@@ -1,0 +1,107 @@
+@import '../app.component.scss';
+
+$card-text: var(--clr-forest-500);
+$card-background: var(--clr-forest-200);
+$border-sm: 10px;
+$border-lg: 20px;
+
+.card {
+    &:before {
+        background-color: transparent;
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: calc(100% + 2px); // account for border
+        width: 20px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    &.green:before {
+        background-color: var(--clr-forest-500);
+    }
+
+    &.orange:before {
+        background-color: var(--clr-orange-500);
+    }
+
+    &.gold:before {
+        background-color: var(--clr-gold-500);
+    }
+    &.mint:before {
+        background-color: var(--clr-mint-500);
+    }
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 2em;
+    line-height: 1.5em;
+    white-space: pre-line;
+}
+
+.details {
+    list-style-type: none;
+    margin: 0 0 3em 0;
+    padding: 0;
+
+    li {
+        position: relative;
+        font-family: var(--type-sans);
+        font-size: 1.5em;
+        font-weight: 200;
+        color: var(--clr-gray);
+        margin-bottom: .75em;
+        padding-left: 1.25em;
+
+        svg {
+            vertical-align: text-top;
+            margin-left: -1.25em;
+            color: var(--clr-forest-500);
+        }
+
+        span {
+            color: var(--clr-gray);
+            margin-left: .25em;
+            // font-size: 1.5em;
+        }
+
+        .address {
+            margin-top: .25em;
+            display: block;
+            color: var(--clr-gray);
+            font-size: .75em;
+            text-decoration-thickness: from-font;
+            text-underline-offset: 2px;
+        }
+    }
+}
+
+.class-link {
+    color: var(--clr-forest-500);
+    padding: .75em 1.5em;
+    border-radius: 10px;
+    font-family: var(--type-sans);
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .card {
+        &:before {
+            border-radius: 0;
+            width: calc(100% + 2px);
+            height: 20px;
+        }
+    }
+    .card-content {
+        grid-template-columns: 1fr;
+    }
+}

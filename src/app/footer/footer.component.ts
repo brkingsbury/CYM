@@ -2,11 +2,11 @@ import { AfterViewInit, Component } from '@angular/core';
 import * as feather from 'feather-icons';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class AppComponent implements AfterViewInit {
+export class FooterComponent implements AfterViewInit {
   ngAfterViewInit() {
     feather.replace();
   }

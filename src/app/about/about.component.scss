@@ -1,0 +1,44 @@
+@import '../app.component.scss';
+
+.bio {
+    .bio-content {
+        display: grid;
+        grid-template-columns: minmax(300px, 700px) minmax(250px, 450px);
+        grid-template-rows: auto auto;
+        gap: 2em;
+        grid-template-areas:
+            "card-header ."
+            "blurb portrait";
+
+        @media (max-width: 650px) {
+            grid-template-areas:
+                "card-header"
+                "blurb"
+                "portrait";
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+        }
+
+    }
+
+    h2 {
+        grid-area: card-header;
+    }
+
+    h3 {
+        margin-bottom: .5em;
+        font-family: var(--type-sans);
+        font-size: 1.75em;
+        font-weight: 300;
+        color: var(--clr-forest-500);
+    }
+
+    .info {
+        grid-area: blurb;
+    }
+
+    img {
+        max-height: 600px;
+        grid-area: portrait;
+    }
+}

@@ -1,0 +1,41 @@
+@import '../app.component.scss';
+
+footer {
+    position: static;
+    margin: 0 1em 1em 0;
+    width: auto;
+    text-align: right;
+    z-index: 5;
+    a {
+        position: relative;
+        margin-left: 2em;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -22px;
+            left: -12px;
+            height: 48px;
+            width: 48px;
+            background-color: var(--clr-forest-100);
+            border-radius: 50%;
+            z-index: -1;
+            transition: all 400ms ease;
+        }
+        svg {
+            color: var(--clr-forest-500);
+            transition: all 400ms ease;
+        }
+        &:hover {
+            &:before {
+                // outline: 2px solid var(--clr-forest-500);
+                background-color: var(--clr-forest-500);
+                transition: all 400ms ease;
+
+            }
+            svg { 
+                transition: all 400ms ease;
+                color: white;
+            }
+        }
+    }
+}

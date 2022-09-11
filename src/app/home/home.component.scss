@@ -1,0 +1,203 @@
+@import '../app.component.scss';
+
+.hero {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+
+    // .circle {
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left:0;
+    //     width: 100%;
+    //     height: 100vw;
+    //     border-radius: 50%;
+    //     background-color: var(--clr-forest-500);
+    //     &:before { 
+    //         content: "";
+    //         display: block;
+    //         padding-top: 100%;
+    //     }
+    // }
+    // &:before {
+    //     content: '';
+    //     z-index: 2;
+    // }
+
+    .main-logo {
+        max-width: 300px;
+        margin-bottom: 1em;
+        padding: 0 1em 1em 0;
+        z-index: 3;
+        border-bottom: 1px solid var(--clr-forest-500);
+    }
+    hr {
+        width: 50%;
+        background-color: var(--clr-forest-500);
+    }
+
+    .subhead {
+        font-family: var(--type-sans);
+        font-size: 1.25em;
+        color: var(--clr-forest-500);
+        font-weight: 300;
+        // color: white;
+        margin: 0 auto;
+        padding: 0 1em;
+        z-index: 3;
+    }
+}
+
+.card {
+    z-index: 3;
+}
+
+.card-header {
+    max-width: 500px;
+    margin-bottom: 1em;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 70px 2fr 2fr max-content;
+    grid-column-gap: 1em;
+    grid-row-gap: 0;
+    align-items: center;
+
+    &:not(:last-of-type) {
+        padding-bottom: 1em;
+        border-bottom: 1px solid var(--clr-forest-300);
+        margin-bottom: 1em;
+    }
+
+    .name {
+        font-size: 1.5em;
+        font-family: var(--type-sans);
+        white-space: nowrap;
+        font-weight: 300;
+    }
+
+    .time {
+        font-size: 1.1em;
+    }
+
+    .text-circle {
+        height: 70px;
+        width: 70px;
+        min-width: 70px;
+        background-color: var(--clr-forest-500);
+        border-radius: 50%;
+        margin-right: 1em;
+
+        p {
+            width: 100%;
+            color: white;
+            line-height: 70px;
+            text-align: center;
+            font-family: var(--type-sans);
+            font-weight: 100;
+            font-size: 24px;
+        }
+
+        &.green {
+            background-color: var(--clr-forest-500);
+        }
+
+        &.orange {
+            background-color: var(--clr-orange-500);
+        }
+
+        &.gold {
+            background-color: var(--clr-gold-500);
+        }
+    }
+}
+
+.link {
+    font-family: var(--type-sans);
+    color: var(--clr-forest-500);
+    font-size: 1em;
+
+}
+
+@media (max-width: 750px) {
+    .event-grid {
+        grid-template-areas: "one two four"
+            "one three four";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 70px 3fr max-content;
+
+        .text-circle {
+            grid-area: one;
+        }
+
+        .name {
+            grid-area: two;
+        }
+
+        .time {
+            grid-area: three;
+        }
+
+        .sign-up {
+            grid-area: four;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .event-grid {
+        grid-template-areas: "one two"
+            "one three"
+            "one four";
+        grid-template-rows: 1fr 1fr auto;
+        grid-template-columns: 70px auto;
+        &:not(:last-of-type) {
+            padding-bottom: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        .text-circle {
+            grid-area: one;
+        }
+
+        .name {
+            grid-area: two;
+            white-space: normal;
+        }
+
+        .time {
+            grid-area: three;
+            margin-bottom: .5em;
+        }
+
+        .sign-up{
+            grid-area: four;
+            // padding: .25em 2.5em;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .card .card-header {
+        margin-bottom: 1em;
+    }
+
+    .event {
+        flex-wrap: wrap;
+        gap: 1em 0;
+        justify-content: center;
+
+        .event-details {
+            display: block;
+            gap: 0;
+            margin: 0;
+        }
+    }
+
+    .sign-up {
+        width: 100%;
+    }
+}

@@ -1,0 +1,125 @@
+$border-sm: 10px;
+$border-lg: 20px;
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 35px;
+
+    img {
+        height: 35px;
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: flex-end;
+        vertical-align: middle;
+        line-height: 35px;
+
+        a {
+            font-family: var(--type-sans);
+            text-decoration: none;
+            color: var(--clr-forest-500);
+            font-size: 1.1em;
+            padding: 0 1em;
+            font-weight: 300;
+
+            &:hover {
+                border-bottom: 2px solid var(--clr-forest-500);
+            }
+            &.active {
+                font-weight: 500;
+                border-bottom: 2px solid var(--clr-gold-500);
+    
+            }
+        }
+        
+    }
+
+    @media (min-width: 601px) {
+        .mobile-only {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        .mobile-only {
+            display: block;
+        }
+
+        .right-nav {
+            position: absolute;
+            right: 0;
+            display: block;
+            background-color: var(--clr-forest-200);
+            height: fit-content;
+            margin-top: 40px;
+            padding: 1em 0;
+            border-radius: 0 0 0 $border-sm;
+            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+            z-index: 10;
+
+            a {
+                display: block;
+                text-align: right;
+                margin-bottom: .25em;
+            }
+        }
+
+        .right-nav:not(.expanded) {
+            height: 0;
+            padding: 0;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .menu-control {
+            position: absolute;
+            right: 5px;
+            border: none;
+            background-color: transparent;
+            text-align: right;
+            font-family: var(--type-sans);
+            color: var(--clr-forest-500);
+            font-size: 1.1em;
+            font-weight: 400;
+            z-index: 4;
+            line-height: 35px;
+            span {
+                margin-right: .25em;
+            }
+            svg {
+                vertical-align: text-bottom;
+            }
+            svg.feather-menu {
+                display: inline;
+            }
+            svg.feather-x {
+                display: none;
+            }
+            &.expanded {
+                svg.feather-x {
+                    display: inline;
+                }
+                svg.feather-menu {
+                    display: none;
+                }
+            }
+        }
+
+        .right-nav.expanded {
+            height: fit-content;
+            position: absolute;
+            right: 0;
+            display: block;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .menu-control span {
+            display: none;
+        }
+    }
+}

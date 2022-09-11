@@ -1,0 +1,32 @@
+<header>
+    <h1 class="page-header">CLASSES</h1>
+</header>
+
+<div class="card" *ngFor="let class of classes" [ngClass]="class.color">
+    <h2 class="card-header">{{class.name}}</h2>
+    <div class="card-content">
+        <div class="card-text">
+            <p class="description">{{class.description}}</p>
+            <ul class="details">
+                <li>
+                    <i data-feather="clock"></i>
+                    <span>{{class.time}}</span>
+                </li>
+                <li>
+                    <i data-feather="dollar-sign"></i>
+                    <span>{{class.price}}</span>
+                </li>
+                <li>
+                    <i data-feather="map-pin"></i>
+                    <span>{{class.location}}</span>
+                    <a class="address" href="{{class.addressURL}}" target="new">{{class.address}}</a>
+                </li>
+            </ul>
+
+            <button class="primary">SIGN UP</button>
+
+            <!-- <a class="class-link" href="{{class.url}}">Book Now</a> -->
+        </div>
+        <img class="card-photo" src="{{class.picture}}" loading="lazy" />
+    </div>
+</div>

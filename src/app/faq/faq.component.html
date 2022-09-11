@@ -1,0 +1,12 @@
+<header>
+    <h1 class="page-header">FAQ</h1>
+</header>
+<div class="card">
+    <div class="qa" *ngFor="let faq of questions">
+        <h2 class="question">
+            Q: {{faq.question}}
+        </h2>
+        <p class="answer">A: {{faq.answer}}</p>
+    </div>
+    <img src="../../assets/seedling.svg"/>
+</div>

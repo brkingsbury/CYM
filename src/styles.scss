@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600&display=swap');
+
+:root {
+    --clr-forest-500: #335D57;
+    --clr-forest-300: #E1EDEF;
+    --clr-forest-200: #EBF4F3;
+    --clr-forest-100: #F6F9F8;
+    --clr-mint-500: #B3CEC7;
+    --clr-mint-300: #E3EDEA;
+    --clr-mint-100: #F6F9F8;
+    --clr-gold-500: #DFA364;
+    --clr-gold-300: #FBF3EC;
+    --clr-gold-100: #FCF7F2;
+    --clr-orange-500: #CB7749;
+    --clr-orange-200: #F9EEE8;
+    --clr-orange-100: #FBF4F0;
+    --clr-gray: #595A5C;
+    --clr-peach: #F1BEAD;
+    --clr-white: #fff;
+
+    --type-slab: 'Zilla Slab', serif;
+    --type-sans: 'Roboto Flex', 'Times New Roman', sans-serif;
+
+    --shadow: hsla(189, 29, 28, 25%);
+}
+
+body {
+    margin: 0;
+    background-color: var(--clr-forest-200);
+}
+
+header {
+    font-family: var(--type-sans);
+}
+
+p {
+    font-family: var(--type-slab);
+    color: var(--clr-gray);
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 600px) and (max-width: 1260px) {
+        margin: 0 30px;
+    }
+}
+
+button {
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    padding: .5em 2em;
+    font-size: 1em;
+    font-family: var(--type-sans);
+    font-weight: 400;
+    line-height: 1em;
+    border: 1px solid transparent;
+    width: fit-content;
+    transition: background-color 400ms ease, color 400ms ease;
+    &.primary {
+        background-color: var(--clr-forest-500);
+        color: var(--clr-forest-100);
+        border-color: var(--clr-forest-500);
+        &:hover, &:focus {
+            background-color: var(--clr-forest-300);
+            color: var(--clr-forest-500);
+        }
+        &:focus {
+            outline: 2px solid var(--clr-forest-500);
+            outline-offset: 2px;
+        }
+    }
+    &.secondary {
+        background-color: var(--clr-forest-200);
+        color: var(--clr-forest-500);
+        border-color: var(--clr-forest-500);
+        &:hover, &:focus {
+            background-color: var(--clr-forest-500);
+            color: var(--clr-forest-100);
+        }
+        &:focus {
+            outline: 2px solid var(--clr-forest-500);
+            outline-offset: 3px;
+        }
+
+    }
+}

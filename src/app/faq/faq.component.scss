@@ -1,0 +1,28 @@
+@import '../app.component.scss';
+
+.qa {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    width: fit-content;
+    z-index: 3;
+    .question {
+        width: fit-content;
+        max-width: 700px;
+        color: var(--clr-forest-500);
+        border-bottom: 1px solid var(--clr-forest-500);
+        font-family: var(--type-sans);
+        font-weight: 200;
+    }
+    .answer {
+        font-size: 1.1em;
+    }
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 90%;
+    z-index: 2;
+}
