@@ -15,7 +15,7 @@
             <p class="name">{{class.className}}</p>
             <p class="time"><strong>{{class.classTime}}</strong> @ {{class.location}}</p>
             <!-- <a class="book-link" href="">SIGN UP</a> -->
-            <button *ngIf="class.signUp" class="secondary sign-up">SIGN UP</button>
+            <button *ngIf="class.signUp" class="btn secondary sign-up">SIGN UP</button>
             <a href="" *ngIf="!class.signUp" class="link sign-up">LEARN MORE</a>
         </div>
     </ng-container>
