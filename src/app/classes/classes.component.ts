@@ -29,7 +29,7 @@ export class ClassesComponent implements AfterViewInit {
       address: "3701 S Packard Ave, St Francis, WI 53235",
       addressURL: "https://goo.gl/maps/QuWPrgYKRTf54QGy7",
       time: "45min",
-      picture: "",
+      picture: "../../assets/y4p_1.jpg",
       url: "https://calendly.com/cultivateyogamke/yogaforparents"
     },
     {
@@ -53,7 +53,7 @@ export class ClassesComponent implements AfterViewInit {
       address: "2555 S Bay St, Milwaukee, WI 53207",
       addressURL: "https://goo.gl/maps/SsE58GLLf9pQC2MFA",
       time: "",
-      picture: "",
+      picture: "../../assets/yb_1.jpg",
       url: "https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes"
     }
   ];
