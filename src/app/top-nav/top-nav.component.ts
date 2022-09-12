@@ -9,6 +9,10 @@ import * as feather from 'feather-icons';
 export class TopNavComponent implements AfterViewInit {
   public menuExpanded = false;
 
+  collapseMenu() {
+    this.menuExpanded = false;
+  }
+
   ngAfterViewInit() {
     feather.replace();
   }}

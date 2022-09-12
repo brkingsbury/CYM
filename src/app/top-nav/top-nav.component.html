@@ -9,7 +9,7 @@
         <i data-feather="menu"></i>
         <i data-feather="x"></i>
     </button>
-    <div class="right-nav" [class.expanded]="menuExpanded">
+    <div class="right-nav" [class.expanded]="menuExpanded" (click)="collapseMenu()">
       <a routerLink="/about" routerLinkActive="active">About</a>
       <a routerLink="/classes" routerLinkActive="active">Classes</a>
       <a routerLink="/faq" routerLinkActive="active">FAQ</a>
