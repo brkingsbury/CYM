@@ -19,14 +19,16 @@
                 <li>
                     <i data-feather="map-pin"></i>
                     <span>{{class.location}}</span>
-                    <a class="address" href="{{class.addressURL}}" target="new">{{class.address}}</a>
+                    <a class="address" href="{{class.addressURL}}" target="_blank">{{class.address}}</a>
                 </li>
             </ul>
-
-            <button class="btn primary">SIGN UP</button>
-
-            <!-- <a class="class-link" href="{{class.url}}">Book Now</a> -->
+            <button class="btn primary" (click)="calendly(class)" *ngIf="class.calendly">
+                SIGN UP
+            </button>
+            <a class="btn primary" href="{{class.url}}" target="_blank" *ngIf="!class.calendly">
+                SIGN UP
+            </a>
+            </div>
+            <img class="card-photo" src="{{class.picture}}" loading="lazy" />
         </div>
-        <img class="card-photo" src="{{class.picture}}" loading="lazy" />
     </div>
-</div>

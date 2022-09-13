@@ -32,4 +32,5 @@ import { ContactComponent } from './contact/contact.component';
   providers: [DatePipe],
   bootstrap: [AppComponent, TopNavComponent, FooterComponent]
 })
-export class AppModule{}
+export class AppModule { }
+declare global { interface Window { Calendly: any; } } 
