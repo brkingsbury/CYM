@@ -43,6 +43,8 @@ p {
 }
 
 main {
+    position: relative;
+    top: 45px;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -64,6 +66,7 @@ main {
     width: fit-content;
     transition: background-color 400ms ease, color 400ms ease;
     text-decoration: none;
+    text-align: center;
     &.primary {
         background-color: var(--clr-forest-500);
         color: var(--clr-forest-100);

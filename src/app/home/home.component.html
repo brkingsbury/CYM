@@ -1,7 +1,6 @@
 <div class="hero">
     <div class="circle"></div>
     <img class="main-logo" src="../../assets/2 tone - Green.svg" />
-    <!-- <img class="main-logo" src="../../assets/Green.svg"/> -->
     <p class="subhead">Yoga for kids, families, and adults. Together, let's grow!</p>
 </div>
 
@@ -15,7 +14,7 @@
             <p class="name">{{class.className}}</p>
             <p class="time"><strong>{{class.classTime}}</strong> @ {{class.location}}</p>
             <button *ngIf="class.signUp" class="btn secondary sign-up" (click)="calendly(class)">SIGN UP</button>
-            <a href="" *ngIf="!class.signUp" class="link sign-up">LEARN MORE</a>
+            <a href="{{class.url}}" *ngIf="!class.signUp" class="link sign-up" target="_blank">LEARN MORE</a>
         </div>
     </ng-container>
 </div>

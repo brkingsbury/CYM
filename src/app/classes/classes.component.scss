@@ -28,6 +28,7 @@ $border-lg: 20px;
     &.gold:before {
         background-color: var(--clr-gold-500);
     }
+
     &.mint:before {
         background-color: var(--clr-mint-500);
     }
@@ -35,23 +36,31 @@ $border-lg: 20px;
 
 .card-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
 }
 
 .description {
+    grid-area: 1 / 1 / 2 / 2;
     font-size: 1em;
-    margin-bottom: 2em;
     line-height: 1.5em;
     white-space: pre-line;
 }
 
+.card-photo {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
 .details {
-    list-style-type: none;
-    margin: 0 0 3em 0;
-    padding: 0;
+    grid-area: 2 / 1 / 3 / 2;
+
+    ul {
+        margin: 0 0 2em 0;
+        list-style-type: none;
+        padding: 0;
+    }
 
     li {
         position: relative;
@@ -94,6 +103,26 @@ $border-lg: 20px;
     font-size: 1em;
 }
 
+@media (max-width: 800px) {
+    .card-content {
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    .description {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .card-photo {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .details {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+}
+
 @media (max-width: 600px) {
     .card {
         &:before {
@@ -102,6 +131,7 @@ $border-lg: 20px;
             height: 20px;
         }
     }
+
     .card-content {
         grid-template-columns: 1fr;
     }
