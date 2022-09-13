@@ -6,6 +6,7 @@ import * as feather from 'feather-icons';
   templateUrl: './classes.component.html',
   styleUrls: ['./classes.component.scss']
 })
+
 export class ClassesComponent implements AfterViewInit {
   public classes = [
     {
@@ -18,6 +19,7 @@ export class ClassesComponent implements AfterViewInit {
       addressURL: "https://goo.gl/maps/hQvrdqHATAmkGB8H7",
       time: "45min",
       picture: "../../assets/ywl_1.jpg",
+      calendly: true,
       url: "https://calendly.com/cultivateyogamke/yogawithyourlittle"
     },
     {
@@ -30,6 +32,7 @@ export class ClassesComponent implements AfterViewInit {
       addressURL: "https://goo.gl/maps/QuWPrgYKRTf54QGy7",
       time: "45min",
       picture: "../../assets/y4p_1.jpg",
+      calendly: true,
       url: "https://calendly.com/cultivateyogamke/yogaforparents"
     },
     {
@@ -42,6 +45,7 @@ export class ClassesComponent implements AfterViewInit {
       addressURL: "https://goo.gl/maps/hLGsSQ4BzMjoYNGH6",
       time: "10:30am",
       picture: "",
+      calendly: false,
       url: "https://www.facebook.com/events/3096932107190182/?ref=newsfeed"
     },
     {
@@ -54,10 +58,16 @@ export class ClassesComponent implements AfterViewInit {
       addressURL: "https://goo.gl/maps/SsE58GLLf9pQC2MFA",
       time: "",
       picture: "../../assets/yb_1.jpg",
+      calendly: false,
       url: "https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes"
     }
   ];
-  
+
+  calendly(event: any) {
+    window.Calendly.initPopupWidget({
+      url: event.url
+    });
+  }
   ngAfterViewInit() {
     feather.replace();
   }
