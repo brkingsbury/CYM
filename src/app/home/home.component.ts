@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { formatDate } from '@angular/common';
-// import { DatePipe } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,34 +7,6 @@ import { formatDate } from '@angular/common';
 })
 export class HomeComponent {
 
-  // public comingClasses = [
-  //   {
-  //     className: 'Yoga with Your Little',
-  //     classTime: '9am',
-  //     location: 'Integrative Wellness - Bay View',
-  //     classDates: [
-  //       '09/17/2022',
-  //       '10/01/2022',
-  //       '08/18/2022', //test
-  //       '10/15/2022',
-  //       '10/29/2022'
-  //     ]
-  //   },
-  //   {
-  //     className: 'Yoga for Parents & Caregivers',
-  //     classTime: '9am',
-  //     location: 'Heart Revival Center - St Francis',
-  //     classDates: [
-  //       '09/23/2022',
-  //       '09/30/2022',
-  //       '10/07/2022',
-  //       '08/16/2022', //test
-  //       '10/14/2022',
-  //       '10/21/2022',
-  //       '10/28/2022'
-  //     ]
-  //   },
-  // ]
   public upcomingClasses = [
     { style: 'green', classDate: '09/17/2022', className: 'Yoga with Your Little', classTime: '9am', location: 'Integrative Wellness - Bay View', signUp: true, url: "https://calendly.com/cultivateyogamke/yogawithyourlittle" },
     { style: 'green', classDate: '10/15/2022', className: 'Yoga with Your Little', classTime: '9am', location: 'Integrative Wellness - Bay View', signUp: true, url: "https://calendly.com/cultivateyogamke/yogawithyourlittle" },
@@ -68,29 +38,6 @@ export class HomeComponent {
       url: event.url + '?hide_event_type_details=1&back=1&month=' + month + '&date=' + event.classDate
     });
   }
-
-
-  // new function to sort comingClass array
-  /*
-  get newSortedClasses() {
-    this.comingClasses.forEach((item) => {
-      item.classDates.forEach((val, index) => {
-        if (new Date(item.classDates[index]) < new Date()) item.classDates.splice(index, 1);
-      });
-
-    });
-
-    return this.comingClasses.forEach((index) => {
-      return index.classDates.forEach((item => {
-        return item;
-      }));
-    });
-*/
-  // return this.comingClasses.sort((a, b) => {
-  //   return <any>new Date(a.classDates) - <any>new Date(b.classDates);
-  //   return a,b;
-  // });
-
 
 }
 

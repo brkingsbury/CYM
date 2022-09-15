@@ -1,10 +1,10 @@
 <nav class="top-nav">
     <div class="left-nav">
-      <a routerLink="">
-        <img src="../../assets/horizontal_logo_50px.svg" />
+      <a routerLink="/">
+        <img src="../../assets/horizontal_logo_50px.svg" alt="Cultivate Yoga MKE logo"/>
       </a>
     </div>
-    <button class="menu-control mobile-only" (click)="menuExpanded = !menuExpanded" [class.expanded]="menuExpanded">
+    <button class="menu-control mobile-only" (click)="menuExpanded = !menuExpanded" [class.expanded]="menuExpanded" aria-label="toggle menu">
       <span>Menu</span>
         <i data-feather="menu"></i>
         <i data-feather="x"></i>
