@@ -13,7 +13,7 @@ export class ClassesComponent implements AfterViewInit {
       name: "Yoga with Your Little",
       description: "Come practice connecting with your little one (ages 3-7) in this 45 minute yoga class. This class will combine yoga poses (asana), breathing practices (pranayama), and fun games/activities to help children and adults cultivate mindful awareness, emotion regulation strategies, and a sense of joy and gratitude for each other!",
       color: "green",
-      price: "18",
+      price: "18 (for 1 adult & 1 child)",
       location: "Integrative Wellness Yoga Shala",
       address: "3201 S Howell Ave, Milwaukee, WI 53207",
       addressURL: "https://goo.gl/maps/hQvrdqHATAmkGB8H7",
