@@ -1,5 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import * as feather from 'feather-icons';
+// import { currentOfferings } from './app.offerings';
 
 @Component({
   selector: 'app-root',

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { formatDate } from '@angular/common';
 // import { DatePipe } from '@angular/common';
+import { currentOfferings } from '../app.offerings';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,11 @@ import { formatDate } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  // currentOfferings = currentOfferings;
+  public offerings = currentOfferings;
+  public upcomingEvents: any = [];
+
+  // test = currentOfferings;
 
   // public comingClasses = [
   //   {
@@ -47,8 +53,10 @@ export class HomeComponent {
     { style: 'orange', classDate: '10/14/2022', className: 'Yoga for Parents & Caregivers', classTime: '9am', location: 'Heart Revival Center - St Francis', signUp: true, url: "https://calendly.com/cultivateyogamke/yogaforparents" },
     { style: 'orange', classDate: '10/21/2022', className: 'Yoga for Parents & Caregivers', classTime: '9am', location: 'Heart Revival Center - St Francis', signUp: true, url: "https://calendly.com/cultivateyogamke/yogaforparents" },
     { style: 'orange', classDate: '10/28/2022', className: 'Yoga for Parents & Caregivers', classTime: '9am', location: 'Heart Revival Center - St Francis', signUp: true, url: "https://calendly.com/cultivateyogamke/yogaforparents" },
-    { style: 'gold', classDate: '09/25/2022', className: "Kids' Yoga in the Garden", classTime: '10:30am', location: "Alice's Garden Urban Farm", signUp: false,
-    url: "https://www.facebook.com/events/3096932107190182/?ref=newsfeed" }
+    {
+      style: 'gold', classDate: '09/25/2022', className: "Kids' Yoga in the Garden", classTime: '10:30am', location: "Alice's Garden Urban Farm", signUp: false,
+      url: "https://www.facebook.com/events/3096932107190182/?ref=newsfeed"
+    }
   ]
 
   get sortedClasses() {
@@ -69,28 +77,46 @@ export class HomeComponent {
     });
   }
 
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  // new function to sort comingClass array
-  /*
-  get newSortedClasses() {
-    this.comingClasses.forEach((item) => {
+  removePastDays() {
+    console.log('removing past days now');
+    this.offerings.forEach((item) => {
       item.classDates.forEach((val, index) => {
-        if (new Date(item.classDates[index]) < new Date()) item.classDates.splice(index, 1);
+        if (new Date(val) < new Date()) item.classDates.splice(index, 1);
       });
+    });
+  }
+  // let newArray = arr.map((currentvalue,index,array)=>{
+  //   return Element of array
+  //   });
 
+  get filteredOfferings() {
+    var x: any = [];
+    var y: any = [];
+    this.removePastDays();
+    this.offerings.forEach((details) => {
+      details.classDates.forEach((date, dex) => {
+        x.push(details);
+        y.push(date);
+        // x[dex].classDates = 
+        // x[dex].classDates = date;
+      // x[dex].classDates = '';
+      
+      });
+    });
+    x.forEach((offering: any, index:any) => {
+      // console.log('off', offering);
+      // console.log('ind', index);
+      // console.log('y', y[index]);
+      offering.classDates = y[index];
+      console.log('x', x);
     });
 
-    return this.comingClasses.forEach((index) => {
-      return index.classDates.forEach((item => {
-        return item;
-      }));
-    });
-*/
-  // return this.comingClasses.sort((a, b) => {
-  //   return <any>new Date(a.classDates) - <any>new Date(b.classDates);
-  //   return a,b;
-  // });
-
-
+    return x;
+    // return this.upcomingEvents.sort((a: { date: string | number | Date; }, b: { date: string | number | Date; }) => {
+    //   return <any>new Date(a.date) - <any>new Date(b.date);
+    // });
+  }
 }
 
