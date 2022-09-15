@@ -35,19 +35,19 @@ export class ClassesComponent implements AfterViewInit {
       calendly: true,
       url: "https://calendly.com/cultivateyogamke/yogaforparents"
     },
-    {
-      name: "Kids' Yoga in the Garden",
-      description: "Join us in the garden for a yoga class for kids of all ages! In this 45 minute session, we'll use the beautiful surroundings of the garden and the tools of yoga to practice connecting with the breath, the body, and with nature. " + "\n\n" + " Adults are welcome to practice alongside their little ones or watch from the sidelines - whatever is most comfortable for you. Feel free to bring a mat (or 2) or blanket to practice on... or just practice on the grass if you prefer!",
-      color: "gold",
-      price: "FREE",
-      location: "Alice's Garden Urban Farm",
-      address: "2136 N 21st St, Milwaukee, WI 53205",
-      addressURL: "https://goo.gl/maps/hLGsSQ4BzMjoYNGH6",
-      time: "10:30am",
-      picture: "",
-      calendly: false,
-      url: "https://www.facebook.com/events/3096932107190182/?ref=newsfeed"
-    },
+    // {
+    //   name: "Kids' Yoga in the Garden",
+    //   description: "Join us in the garden for a yoga class for kids of all ages! In this 45 minute session, we'll use the beautiful surroundings of the garden and the tools of yoga to practice connecting with the breath, the body, and with nature. " + "\n\n" + " Adults are welcome to practice alongside their little ones or watch from the sidelines - whatever is most comfortable for you. Feel free to bring a mat (or 2) or blanket to practice on... or just practice on the grass if you prefer!",
+    //   color: "gold",
+    //   price: "FREE",
+    //   location: "Alice's Garden Urban Farm",
+    //   address: "2136 N 21st St, Milwaukee, WI 53205",
+    //   addressURL: "https://goo.gl/maps/hLGsSQ4BzMjoYNGH6",
+    //   time: "10:30am",
+    //   picture: "",
+    //   calendly: false,
+    //   url: "https://www.facebook.com/events/3096932107190182/?ref=newsfeed"
+    // },
     {
       name: "Yoga Buddies",
       description: "This is a space for little ones, ages 2-5 and one caregiver to practice yoga together. Using the tools of yoga, we will practice skills to handle big feelings. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help us learn and grow together. Have fun while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!",
@@ -56,7 +56,7 @@ export class ClassesComponent implements AfterViewInit {
       location: "Beulah Brinton Community Center",
       address: "2555 S Bay St, Milwaukee, WI 53207",
       addressURL: "https://goo.gl/maps/SsE58GLLf9pQC2MFA",
-      time: "",
+      time: "45min",
       picture: "../../assets/yb_1.jpg",
       calendly: false,
       url: "https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes"
