@@ -32,11 +32,11 @@ export class HomeComponent {
       return <any>new Date(a.classDate) - <any>new Date(b.classDate);
     });
   }
-
+  // use '?hide_event_type_details=1' for only the calendar, no class details
   calendly(event: any) {
     const month = formatDate(event.classDate, 'yyyy-MM', 'en-US');
     window.Calendly.initPopupWidget({
-      url: event.url + '?hide_event_type_details=1&back=1&month=' + month + '&date=' + event.classDate
+      url: event.url + '?back=1&month=' + month + '&date=' + event.classDate
     });
   }
 

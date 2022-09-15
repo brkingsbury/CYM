@@ -19,6 +19,7 @@ export class ClassesComponent implements AfterViewInit {
       addressURL: "https://goo.gl/maps/hQvrdqHATAmkGB8H7",
       time: "45min",
       picture: "../../assets/ywl_1.jpg",
+      altText: "An adult and child doing yoga together",
       calendly: true,
       url: "https://calendly.com/cultivateyogamke/yogawithyourlittle"
     },
@@ -31,7 +32,8 @@ export class ClassesComponent implements AfterViewInit {
       address: "3701 S Packard Ave, St Francis, WI 53235",
       addressURL: "https://goo.gl/maps/QuWPrgYKRTf54QGy7",
       time: "45min",
-      picture: "../../assets/y4p_1.jpg",
+      picture: "../../assets/y4p.jpg",
+      altText: "An adult doing yoga with a toddler crawling underneath",
       calendly: true,
       url: "https://calendly.com/cultivateyogamke/yogaforparents"
     },
@@ -57,7 +59,8 @@ export class ClassesComponent implements AfterViewInit {
       address: "2555 S Bay St, Milwaukee, WI 53207",
       addressURL: "https://goo.gl/maps/SsE58GLLf9pQC2MFA",
       time: "45min",
-      picture: "../../assets/yb_1.jpg",
+      picture: "../../assets/yb.jpg",
+      altText: "An adult and child doing yoga together",
       calendly: false,
       url: "https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes"
     }
