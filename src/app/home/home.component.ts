@@ -36,7 +36,7 @@ export class HomeComponent {
   calendly(event: any) {
     const month = formatDate(event.classDate, 'yyyy-MM', 'en-US');
     window.Calendly.initPopupWidget({
-      url: event.url + '?back=1&month=' + month + '&date=' + event.classDate
+      url: event.url + '?hide_gdpr_banner=1&back=1&month=' + month + '&date=' + event.classDate
     });
   }
 
