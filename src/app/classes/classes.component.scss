@@ -10,8 +10,8 @@ $border-lg: 20px;
         background-color: transparent;
         position: absolute;
         content: '';
-        left: 0;
-        top: 0;
+        left: -1px;
+        top: -1px;
         height: calc(100% + 2px); // account for border
         width: 20px;
         border-radius: 20px 0 0 20px;

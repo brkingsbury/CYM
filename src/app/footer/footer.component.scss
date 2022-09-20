@@ -6,33 +6,30 @@ footer {
     width: auto;
     text-align: right;
     z-index: 5;
+
     a {
         position: relative;
-        margin-left: 2em;
-        &:before {
-            content: '';
-            position: absolute;
-            top: -22px;
-            left: -12px;
-            height: 48px;
-            width: 48px;
-            background-color: var(--clr-forest-100);
-            border-radius: 50%;
-            z-index: -1;
-            transition: all 400ms ease;
-        }
+        display: inline-block;
+        margin-left: 1em;
+        font-size: 24px;
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: var(--clr-forest-100);
+        transition: all 400ms ease;
+
         svg {
+            vertical-align: text-top;
             color: var(--clr-forest-500);
             transition: all 400ms ease;
         }
-        &:hover {
-            &:before {
-                // outline: 2px solid var(--clr-forest-500);
-                background-color: var(--clr-forest-500);
-                transition: all 400ms ease;
 
-            }
-            svg { 
+        &:hover {
+            background-color: var(--clr-forest-500);
+
+            svg {
                 transition: all 400ms ease;
                 color: white;
             }
