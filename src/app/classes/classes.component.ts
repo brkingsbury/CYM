@@ -13,7 +13,7 @@ export class ClassesComponent implements AfterViewInit {
 
   calendly(event: any) {
     window.Calendly.initPopupWidget({
-      url: event.calendlyUrl
+      url: event.calendlyUrl + '?hide_gdpr_banner=1'
     });
   }
   ngAfterViewInit() {

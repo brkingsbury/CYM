@@ -10,6 +10,7 @@ export interface Offerings {
   address: string;
   addressUrl: string;
   picture: string;
+  altText: string;
   signUp: boolean;
   url?: string;
   calendlyUrl?: string;
@@ -29,6 +30,7 @@ export const currentOfferings: Offerings[] = [
     address: '3201 S Howell Ave, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/hQvrdqHATAmkGB8H7',
     picture: '../assets/ywl_1.jpg',
+    altText: "An adult and child doing yoga together",
     signUp: true,
     calendlyUrl: 'https://calendly.com/cultivateyogamke/yogawithyourlittle',
     classDates: [] = [
@@ -48,7 +50,8 @@ export const currentOfferings: Offerings[] = [
     location: 'The Heart Revival Center for Yoga and Buddhist Studies',
     address: '3701 S Packard Ave, St Francis, WI 53235',
     addressUrl: 'https://goo.gl/maps/QuWPrgYKRTf54QGy7',
-    picture: '../assets/y4p_1.jpg',
+    picture: '../assets/y4p.jpg',
+    altText: "An adult doing yoga with a toddler crawling underneath",
     signUp: true,
     calendlyUrl: 'https://calendly.com/cultivateyogamke/yogaforparents',
     classDates: [] = [
@@ -72,6 +75,7 @@ export const currentOfferings: Offerings[] = [
     address: '2136 N 21st St, Milwaukee, WI 53205',
     addressUrl: 'https://goo.gl/maps/hLGsSQ4BzMjoYNGH6',
     picture: '',
+    altText: '',
     signUp: false,
     url: 'https://www.facebook.com/events/3096932107190182/?ref=newsfeed',
     classDates: [] = [
@@ -89,7 +93,8 @@ export const currentOfferings: Offerings[] = [
     location: "Beulah Brinton Community Center",
     address: '2555 S Bay St, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
-    picture: '../assets/yb_1.jpg',
+    picture: '../assets/yb.jpg',
+    altText: "An adult and child doing yoga together",
     signUp: false,
     url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
     classDates: [] = []
