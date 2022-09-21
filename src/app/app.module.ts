@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { AboutComponent } from './about/about.component';
+import { FilterClassesPipe } from './classes/classes.pipe';
 import { ClassesComponent } from './classes/classes.component';
 import { HomeComponent } from './home/home.component';
 import { LinksComponent } from './links/links.component';
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     LinksComponent,
     FooterComponent,
     FaqComponent,
-    ContactComponent
+    ContactComponent,
+    FilterClassesPipe
   ],
   imports: [
     BrowserModule,

@@ -44,7 +44,7 @@ $border-lg: 20px;
 
 .description {
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 1em;
+    font-size: 1.05em;
     line-height: 1.5em;
     white-space: pre-line;
 }
@@ -65,7 +65,7 @@ $border-lg: 20px;
     li {
         position: relative;
         font-family: var(--type-sans);
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 200;
         color: var(--clr-gray);
         margin-bottom: .75em;
@@ -78,14 +78,18 @@ $border-lg: 20px;
             color: var(--clr-forest-500);
         }
 
-        span {
+        p {
+            font-family: var(--type-sans);
             color: var(--clr-gray);
             margin-left: .25em;
-            // font-size: 1.5em;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         .address {
+            font-weight: 300;
             margin-top: .25em;
+            margin-left: .25em;
             display: block;
             color: var(--clr-gray);
             font-size: .75em;

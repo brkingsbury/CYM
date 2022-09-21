@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600&display=swap');
 
 :root {
-    --clr-forest-500: #335D57;
+    --clr-forest-500: #335d57;
     --clr-forest-300: #E1EDEF;
     --clr-forest-200: #EBF4F3;
     --clr-forest-100: #F6F9F8;
@@ -93,5 +93,23 @@ main {
             outline-offset: 3px;
         }
 
+    }
+}
+// styling calendly iframe
+.calendly-overlay {
+    backdrop-filter: blur(4px);
+    .calendly-popup-close {
+        &:before {
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            height: 40px;
+            left: -10px;
+            top: -10px;
+            width: 40px;
+            background-color: var(--clr-forest-500);
+            opacity: .9;
+            z-index: -1;
+        }
     }
 }

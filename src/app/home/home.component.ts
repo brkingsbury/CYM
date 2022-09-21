@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   calendly(event: any) {
     const month = formatDate(event.date, 'yyyy-MM', 'en-US');
     window.Calendly.initPopupWidget({
-      url: event.details.calendlyUrl + '?hide_gdpr_banner=1&back=1&month=' + month + '&date=' + event.date
-      // url: event.details.calendlyUrl
+      url: event.details.calendlyUrl + '?hide_gdpr_banner=1&back=1&month=' + month + '&date=' + event.date + '&background_color=F6F9F8&primary_color=335d57'
     });
   }
 

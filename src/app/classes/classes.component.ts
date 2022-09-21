@@ -9,11 +9,11 @@ import { currentOfferings } from '../app.offerings';
 })
 
 export class ClassesComponent implements AfterViewInit {
-  public currentClasses = currentOfferings;
+  public currentClasses:any [] = currentOfferings;
 
   calendly(event: any) {
     window.Calendly.initPopupWidget({
-      url: event.calendlyUrl + '?hide_gdpr_banner=1'
+      url: event.calendlyUrl + '?hide_gdpr_banner=1' + '&background_color=F6F9F8&primary_color=335d57'
     });
   }
   ngAfterViewInit() {
