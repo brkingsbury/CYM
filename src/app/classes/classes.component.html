@@ -2,7 +2,7 @@
     <h1 class="page-header">CLASSES</h1>
 </header>
 
-<div class="card" *ngFor="let class of classes" [ngClass]="class.color">
+<div class="card" *ngFor="let class of currentClasses | filterClasses" [ngClass]="class.color">
     <h2 class="card-header">{{class.name}}</h2>
     <div class="card-content">
         <p class="description">{{class.description}}</p>
@@ -11,22 +11,22 @@
             <ul>
                 <li>
                     <i data-feather="clock"></i>
-                    <span>{{class.time}}</span>
+                    <p>{{class.occurance}} @ {{class.time}}</p>
                 </li>
                 <li>
                     <i data-feather="dollar-sign"></i>
-                    <span>{{class.price}}</span>
+                    <p>{{class.price}}</p>
                 </li>
                 <li>
                     <i data-feather="map-pin"></i>
-                    <span>{{class.location}}</span>
-                    <a class="address" href="{{class.addressURL}}" target="_blank">{{class.address}}</a>
+                    <p>{{class.location}}</p>
+                    <a class="address" href="{{class.url}}" target="_blank">{{class.address}}</a>
                 </li>
             </ul>
-            <button class="btn primary" (click)="calendly(class)" *ngIf="class.calendly">
+            <button class="btn primary" (click)="calendly(class)" *ngIf="class.signUp">
                 SIGN UP
             </button>
-            <a class="btn primary" href="{{class.url}}" target="_blank" *ngIf="!class.calendly">
+            <a class="btn primary" href="{{class.url}}" target="_blank" *ngIf="!class.signUp">
                 SIGN UP
             </a>
         </div>
