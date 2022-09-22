@@ -1,2 +1,2 @@
-User-agent: *
-Disallow: /contact/
+user-agent: *
+disallow: /contact/
