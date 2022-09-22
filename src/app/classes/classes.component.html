@@ -20,7 +20,7 @@
                 <li>
                     <i data-feather="map-pin"></i>
                     <p>{{class.location}}</p>
-                    <a class="address" href="{{class.url}}" target="_blank">{{class.address}}</a>
+                    <a class="address" href="{{class.addressUrl}}" target="_blank">{{class.address}}</a>
                 </li>
             </ul>
             <button class="btn primary" (click)="calendly(class)" *ngIf="class.signUp">

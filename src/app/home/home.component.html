@@ -14,7 +14,7 @@
             <p class="name">{{class.details.name}}</p>
             <p class="time"><strong>{{class.details.time}}</strong> @ {{class.details.location}}</p>
             <button *ngIf="class.details.signUp" class="btn secondary sign-up" (click)="calendly(class)">SIGN UP</button>
-            <a href="{{class.details.url}}" *ngIf="!class.details.signUp" class="link sign-up" target="_blank">LEARN MORE</a>
+            <a href="{{class.details.url}}" *ngIf="!class.details.signUp" class="link sign-up" target="_blank" attr.aria-label="Learn More about {{class.details.name}}" >LEARN MORE</a>
         </div>
     </ng-container>
 </div>
