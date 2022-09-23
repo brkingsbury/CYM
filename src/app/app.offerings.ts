@@ -83,7 +83,7 @@ export const currentOfferings: Offerings[] = [
     signUp: false,
     url: 'https://www.facebook.com/events/3096932107190182/?ref=newsfeed',
     classDates: [] = [
-      '09/24/2022'
+      '09/25/2022'
     ]
   },
   {
