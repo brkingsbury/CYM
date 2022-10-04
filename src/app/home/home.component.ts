@@ -21,15 +21,23 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // remove days in the past
     this.currentEvents.forEach((item) => {
-      item.classDates.forEach((val, index) => {
-        if (new Date(val) < new Date()) item.classDates.splice(index, 1);
-      });
+      var i = item.classDates.length;
+      while (i--) {
+        var d: Date = new Date(item.classDates[i]);
+        d.setHours(item.time); //needed to not get filtered out until event time
+        if (d < new Date()) {
+          item.classDates.splice(i, 1);
+        }
+      }
     });
 
-    // for every class and then for every date of those classes, push details and dates to new lists
+    // for every class and then for every date of those classes, push details and dates to new list
     this.currentEvents.forEach((singleClass) => {
-      singleClass.classDates.forEach((eventDate, i) => {
-        this.upcomingEvents.push({ details: singleClass, date: eventDate });
+      singleClass.classDates.forEach((eventDate) => {
+        let d: Date = new Date(eventDate);
+        let t = singleClass.time;
+        d.setHours(t);
+        this.upcomingEvents.push({ details: singleClass, date: d });
       });
     });
 

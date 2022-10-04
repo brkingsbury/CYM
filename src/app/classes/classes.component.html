@@ -11,7 +11,8 @@
             <ul>
                 <li>
                     <i data-feather="clock"></i>
-                    <p>{{class.occurance}} @ {{class.time}}</p>
+                    <p>{{class.occurance}} @ {{ timeCheck(class.time) | date: 'h a'}}
+                    </p>
                 </li>
                 <li>
                     <i data-feather="dollar-sign"></i>
@@ -26,7 +27,7 @@
             <button class="btn primary" (click)="calendly(class)" *ngIf="class.signUp">
                 SIGN UP
             </button>
-            <a class="btn primary" href="{{class.url}}" target="_blank" *ngIf="!class.signUp">
+            <a class="btn primary" href="{{class.url}}" target="_blank" *ngIf="!class.signUp && class.url!= '' ">
                 SIGN UP
             </a>
         </div>

@@ -19,4 +19,10 @@ export class ClassesComponent implements AfterViewInit {
   ngAfterViewInit() {
     feather.replace();
   }
+
+  timeCheck(hour:number) { 
+    let time = new Date();
+    time.setHours(hour);
+    return time;
+  }
 }
