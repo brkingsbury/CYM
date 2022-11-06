@@ -8,7 +8,7 @@
         <p class="description">{{class.description}}</p>
         <img class="card-photo" src="{{class.picture}}" loading="lazy" alt="{{class.altText}}"/>
         <div class="details">
-            <ul>
+            <ul *ngIf="!class.comingSoon">
                 <li>
                     <i data-feather="clock"></i>
                     <p>{{class.occurance}} @ {{ timeCheck(class.time) | date: 'h a'}}
@@ -24,6 +24,9 @@
                     <a class="address" href="{{class.addressUrl}}" target="_blank">{{class.address}}</a>
                 </li>
             </ul>
+            <p *ngIf="class.comingSoon" class="coming-soon">
+                New classes coming soon. Stay tuned!
+            </p>
             <button class="btn primary" (click)="calendly(class)" *ngIf="class.signUp">
                 SIGN UP
             </button>

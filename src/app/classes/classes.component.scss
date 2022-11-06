@@ -97,6 +97,11 @@ $border-lg: 20px;
             text-underline-offset: 2px;
         }
     }
+    .coming-soon {
+        font-weight: 300;
+        font-size: 1.25em;
+        font-family: var(--type-sans);
+    }
 }
 
 .class-link {

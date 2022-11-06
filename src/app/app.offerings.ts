@@ -16,6 +16,7 @@ export interface Offerings {
   learnMore?: boolean;
   url?: string;
   calendlyUrl?: string;
+  comingSoon?: boolean;
   classDates: string[];
 }
 
@@ -25,7 +26,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Class',
     description: 'Come practice connecting with your little one (ages 3-7) in this 45 minute yoga class. This class will combine yoga poses (asana), breathing practices (pranayama), and fun games/activities to help children and adults cultivate mindful awareness, emotion regulation strategies, and a sense of joy and gratitude for each other!',
     time: 9,
-    occurance: 'Every other Saturday',
+    occurance: 'New classes coming soon',
     length: '45min',
     price: '18 (for 1 adult & 1 child)',
     color: 'green',
@@ -34,11 +35,12 @@ export const currentOfferings: Offerings[] = [
     addressUrl: 'https://goo.gl/maps/hQvrdqHATAmkGB8H7',
     picture: '../assets/ywl_1.jpg',
     altText: "An adult and child doing yoga together",
-    signUp: true,
+    signUp: false,
     calendlyUrl: 'https://calendly.com/cultivateyogamke/yogawithyourlittle',
+    url: '',
+    comingSoon: true,
     classDates: [] = [
-      '10/15/2022',
-      '10/29/2022'
+      // '10/15/2022'
     ]
   },
   {
@@ -55,14 +57,11 @@ export const currentOfferings: Offerings[] = [
     addressUrl: 'https://goo.gl/maps/QuWPrgYKRTf54QGy7',
     picture: '../assets/y4p.jpg',
     altText: "An adult doing yoga with a toddler crawling underneath",
-    signUp: true,
+    signUp: false,
     calendlyUrl: 'https://calendly.com/cultivateyogamke/yogaforparents',
-    classDates: [] = [
-      '10/07/2022',
-      '10/14/2022',
-      '10/21/2022',
-      '10/28/2022'
-    ]
+    url: '',
+    comingSoon: true,
+    classDates: [] = []
   },
   {
     name: "Yoga Together",
