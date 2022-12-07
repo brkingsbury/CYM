@@ -75,8 +75,8 @@ export const currentOfferings: Offerings[] = [
     location: "Bay View Community Center",
     address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
-    picture: '../assets/yt.jpg',
-    altText: 'A parent and childing holding hands on their yoga mats',
+    picture: '../assets/bvcc.jpg',
+    altText: 'A group of parents and their children doing yoga in a circle',
     signUp: false,
     learnMore: true,
     url: '',
@@ -88,26 +88,26 @@ export const currentOfferings: Offerings[] = [
       '12/14/2022',
       '12/28/2022'
     ]
-  },
-  {
-    name: "Yoga Buddies",
-    type: 'Series',
-    description: "This is a space for little ones, ages 2-5 and one caregiver to practice yoga together. Using the tools of yoga, we will practice skills to handle big feelings. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help us learn and grow together. Have fun while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!",
-    length: '45min',
-    time: 16,
-    occurance: 'Starts January 23rd',
-    price: '30 for Milwaukee residents, 46 for non-residents',
-    color: 'mint',
-    location: "Beulah Brinton Community Center",
-    address: '2555 S Bay St, Milwaukee, WI 53207',
-    addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
-    picture: '../assets/yb.jpg',
-    altText: "An adult and child doing yoga together",
-    signUp: false,
-    learnMore: true,
-    url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
-    classDates: [] = [
-      '01/23/2023'
-    ]
   }
+  // {
+  //   name: "Yoga Buddies",
+  //   type: 'Series',
+  //   description: "This is a space for little ones, ages 2-5 and one caregiver to practice yoga together. Using the tools of yoga, we will practice skills to handle big feelings. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help us learn and grow together. Have fun while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!",
+  //   length: '45min',
+  //   time: 16,
+  //   occurance: 'Starts January 23rd',
+  //   price: '30 for Milwaukee residents, 46 for non-residents',
+  //   color: 'mint',
+  //   location: "Beulah Brinton Community Center",
+  //   address: '2555 S Bay St, Milwaukee, WI 53207',
+  //   addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
+  //   picture: '../assets/yb.jpg',
+  //   altText: "An adult and child doing yoga together",
+  //   signUp: false,
+  //   learnMore: true,
+  //   url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
+  //   classDates: [] = [
+  //     '01/23/2023'
+  //   ]
+  // }
 ]
