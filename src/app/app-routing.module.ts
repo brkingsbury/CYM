@@ -10,6 +10,7 @@ import { FaqComponent } from './faq/faq.component';
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
+  { path: "offerings", component: ClassesComponent },
   { path: "classes", component: ClassesComponent },
   { path: "faq", component: FaqComponent },
   // { path: "contact", component: ContactComponent },

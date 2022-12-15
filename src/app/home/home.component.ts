@@ -10,6 +10,7 @@ import { currentOfferings } from '../app.offerings';
 export class HomeComponent implements OnInit {
   public currentEvents = currentOfferings;
   public upcomingEvents: any = [];
+  public showAll = false;
 
   calendly(event: any) {
     const month = formatDate(event.date, 'yyyy-MM', 'en-US');
