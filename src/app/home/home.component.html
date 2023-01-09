@@ -1,24 +1,46 @@
 <section class="hero">
     <div class="circle"></div>
-    <img class="main-logo" src="../../assets/2 tone - Green.svg" alt="A logo of a seedling with the rising sun behind it. Underneath it is the text Cultivate Yoga MKE"/>
-    <p class="subhead">Offering yoga for kids, families, and adults around Milwaukee.<br/>Together, let's grow!</p>
+    <img class="main-logo" src="../../assets/2 tone - Green.svg"
+        alt="A logo of a seedling with the rising sun behind it. Underneath it is the text Cultivate Yoga MKE" />
+    <p class="subhead">Offering yoga for kids, families, and adults around Milwaukee.<br />Together, let's grow!</p>
 </section>
 
-<div class="card events-card">
+<section class="card events-card">
     <h2 class="card-header">Upcoming Events</h2>
     <ng-container *ngFor="let class of upcomingEvents; let i = index">
-        <div class="event-grid" *ngIf="i<7 || showAll">
+        <div class="event-grid" *ngIf="i<7 || showAll" [ngClass]="{'expanded': class.expanded}">
             <div class="text-circle" ngClass="{{class.details.color}}">
                 <p class="date">{{class.date | date:'M.dd'}}</p>
             </div>
-            <p class="name">{{class.details.name}}</p>
-            <p class="time"><strong>{{class.date | date:'h a'}}</strong> @ {{class.details.location}}</p>
+            <div class="class-title">
+                <h3 class="name">{{class.details.name}}</h3>
+                <p class="ages">(ages: {{class.details.ages}})</p>
+            </div>
+            <p class="time">
+                <strong>{{class.date | date:'h a'}}</strong> @ {{class.details.location}}
+            </p>
+            
+            <p class="price">{{class.details.price}}</p>
             <!-- <button *ngIf="class.details.signUp" class="btn secondary sign-up" (click)="calendly(class)">SIGN UP</button> -->
-            <a *ngIf="class.details.signUp" class="link sign-up" [attr.href]="class.details.url" target="_blank">SIGN UP</a>
-            <a routerLink="/offerings" *ngIf="class.details.learnMore" class="link sign-up" attr.aria-label="Learn More about {{class.details.name}}" >LEARN MORE</a>
+            <a *ngIf="class.details.signUp" class="link sign-up" [attr.href]="class.details.url" target="_blank">
+                SIGN UP
+            </a>
+            <p *ngIf="class.details.dropIn" class="sign-up">DROP IN</p>
+
+            <p *ngIf="class.expanded" class="description">
+                {{class.details.description}}
+            </p>
+            <!-- <a routerLink="/offerings" *ngIf="class.details.learnMore" class="link sign-up" attr.aria-label="Learn More about {{class.details.name}}" >LEARN MORE</a> -->
+            <div class="expand-button">
+                <button class="btn text" (click)="class.expanded = !class.expanded">
+                    {{class.expanded ? "Hide": "Show"}} Details
+                    <img src="../../assets/icons/chevron-down.svg" />
+                </button>
+            </div>
         </div>
     </ng-container>
     <div class="button-bar">
-        <button *ngIf="!showAll && upcomingEvents.length > 7" class="btn" (click)="showAll = true">View all</button>
+        <button *ngIf="!showAll && upcomingEvents.length > 7" class="btn secondary" (click)="showAll = true">View
+            all</button>
     </div>
-</div>
+</section>

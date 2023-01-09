@@ -77,16 +77,4 @@ $border-lg: 20px;
     @media (max-width: 500px) {
         padding: 2em 1em;
     }
-
-}
-
-button.btn {
-    border: 1px solid var(--clr-forest-500);
-    background-color: var(--clr-forest-200);
-    // padding: 10px 15px;
-    color: var(--clr-forest-500);
-    &:hover, &:focus {
-        background-color: var(--clr-forest-500);
-        color: var(--clr-white);
-    }
 }

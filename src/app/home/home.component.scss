@@ -42,9 +42,10 @@
 
 .event-grid {
     display: grid;
-    grid-template-columns: 70px 2fr 2fr max-content;
-    grid-column-gap: 1em;
-    grid-row-gap: 0;
+    grid-template-columns: 75px 2fr 2fr 1fr max-content;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    column-gap: 1em;
+    row-gap: 0;
     align-items: center;
 
     &:not(:last-of-type) {
@@ -53,20 +54,37 @@
         margin-bottom: 1em;
     }
 
+    .description {
+        font-family: var(--type-slab);
+        row-gap: 1em;
+        grid-column-start: 2;
+        grid-column-end: end;
+    }
+
     .name {
-        font-size: 1.5em;
+        font-size: 1.75em;
         font-family: var(--type-sans);
         font-weight: 300;
+        margin: 0;
+    }
+    .ages {
+        font-size: 1em;
+        margin-top: 3px;
+    }
+    .price {
+        font-family: var(--type-sans);
+        font-size: 1em;
     }
 
     .time {
-        font-size: 1.1em;
+        font-family: var(--type-sans);
+        font-size: 1em;
     }
 
     .text-circle {
-        height: 70px;
-        width: 70px;
-        min-width: 70px;
+        height: 75px;
+        width: 75px;
+        min-width: 75px;
         background-color: var(--clr-forest-500);
         border-radius: 50%;
         margin-right: 1em;
@@ -74,12 +92,12 @@
         p {
             width: 100%;
             color: var(--clr-white);
-            line-height: 70px;
+            line-height: 75px;
             text-align: center;
             vertical-align: middle;
             font-family: var(--type-sans);
             font-weight: 200;
-            font-size: 24px;
+            font-size: 26px;
         }
 
         &.green {
@@ -100,32 +118,53 @@
     }
     .sign-up {
         min-width: 125px;
-        &.link {
-            text-align: center;
+        text-align: center;
+        color: var(--clr-forest-500);
+        font-family: var(--type-sans);
+    }
+    .expand-button {
+        grid-column: 1/-1;
+        text-align: center;
+        img {
+            transition: rotate 300ms ease-in;
+            vertical-align: text-bottom;
+            height: 20px;
+            width: 20px;
         }
     }
+
+    &.expanded {
+        row-gap: 1em;
+        transition: all 300ms ease;
+        .expand-button img {
+            rotate: 180deg;
+        }
+    }
+
 }
 
 .link {
     font-family: var(--type-sans);
     color: var(--clr-forest-500);
     font-size: 1em;
-
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
 }
 
 @media (max-width: 750px) {
     .event-grid {
         grid-template-areas: "one two four"
             "one three four";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 70px 3fr max-content;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: 75px 3fr max-content;
 
         .text-circle {
             grid-area: one;
         }
 
-        .name {
+        .class-title {
             grid-area: two;
+            margin-bottom: 10px;
         }
 
         .time {
@@ -146,9 +185,13 @@
     .event-grid {
         grid-template-areas: "one two"
             "one three"
-            "one four";
-        grid-template-rows: 1fr 1fr auto;
+            "one four"
+            "one five"
+            "one six"
+            "one seven";
+        grid-template-rows: minmax(70px, 1fr) auto;
         grid-template-columns: 70px auto;
+        row-gap: 1em;
         align-items: start;
         &:not(:last-of-type) {
             padding-bottom: 1.5em;
@@ -169,24 +212,41 @@
 
         .text-circle {
             grid-area: one;
+            height: 70px;
+            width: 70px;
+            min-width: 70px;
+            p {
+                font-size: 24px;
+                line-height: 70px;
+            }
         }
 
-        .name {
+        .class-title {
             grid-area: two;
-            white-space: normal;
+            h3, p {
+                white-space: normal;
+            }
         }
 
         .time {
             grid-area: three;
-            margin-bottom: .5em;
+        }
+        .price {
+            grid-area: four;
         }
 
         .sign-up{
-            grid-area: four;
+            grid-area: five;
             width: 100%;
-            &.link {
-                text-align: left;
-            }
+            text-align: left;
+        }
+        .description {
+            grid-area: six;
+        }
+        .expand-button {
+            grid-area: seven;
+            text-align: left;
+            margin-left: -15px;
         }
 
     }

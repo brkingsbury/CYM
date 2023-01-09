@@ -15,6 +15,7 @@ export interface Offerings {
   altText?: string;
   signUp: boolean;
   learnMore?: boolean;
+  dropIn?: boolean;
   url?: string;
   calendlyUrl?: string;
   comingSoon?: boolean;
@@ -95,20 +96,20 @@ export const currentOfferings: Offerings[] = [
     name: 'Kids Yoga',
     type: 'Class',
     ages: '8 - 11',
-    description: "In this class, kids ages 8-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection.",
+    description: "In this class, kids ages 8-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. This class is for kids to attend without their parent/guardian.",
     time: 9,
     occurance: 'Saturdays',
     length: '1 hour',
-    price: '45 for series / $10 per class (drop in)',
+    price: '$45 for series / $10 per class (drop in)',
     color: 'green',
     location: "Bay View Community Center",
     address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
-    picture: '../assets/yb.jpg',
+    picture: '../assets/kidsyoga.jpg',
     altText: "An adult and child doing yoga together",
-    signUp: false,
+    signUp: true,
     learnMore: true,
-    url: '',
+    url: 'https://bayviewcenter.org/programs/',
     classDates: [] = [
       '01/07/2023',
       '01/14/2023',
@@ -127,7 +128,7 @@ export const currentOfferings: Offerings[] = [
     time: 11,
     occurance: '2nd & 4th Wednesdays',
     length: '1 hour',
-    price: 'Free',
+    price: 'FREE!',
     color: 'mint',
     location: "Bay View Community Center",
     address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
@@ -135,7 +136,7 @@ export const currentOfferings: Offerings[] = [
     picture: '../assets/bvcc.jpg',
     altText: "An adult and child doing yoga together",
     signUp: false,
-    learnMore: true,
+    dropIn: true,
     url: '',
     classDates: [] = [
       '01/11/2023',
@@ -152,34 +153,18 @@ export const currentOfferings: Offerings[] = [
     name: "Yoga for Kids",
     type: 'Class',
     ages: '7-11',
-    description: 'In this class, kids ages 7-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. This class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection.',
-    occurance: '12/27 (Brookfield) & 01/14 (Milwaukee)',
+    description: 'In this class, kids ages 7-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. This class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. This class is for kids to attend without their parent/guardian.',
+    occurance: '01/14',
     length: '45min',
     time: 11,
-    price: '15 for Adventure Rock Members, $20 for Non-Members',
-    color: 'orange',
-    location: "Adventure Rock - Brookfield",
-    signUp: true,
-    learnMore: false,
-    url: 'https://adventurerock.com/yoga/catalog/brookfield/',
-    picture: '../assets/kids_yoga_1.jpg',
-    altText: "Children doing yoga",
-    classDates: [] = [
-      '12/27/2022'
-    ]
-  },
-  {
-    name: "Yoga for Kids",
-    type: 'Workshop',
-    ages: '7-11',
-    length: '45min',
-    time: 11,
-    price: '15 for Adventure Rock Members, 20 for Non-Members',
+    price: '$15 for Adventure Rock Members, $20 for Non-Members',
     color: 'orange',
     location: "Adventure Rock - Milwaukee",
     signUp: true,
     learnMore: false,
     url: 'https://adventurerock.com/yoga/catalog/milwaukee/',
+    picture: '../assets/kids_yoga_1.jpg',
+    altText: "Children doing yoga",
     classDates: [] = [
       '01/14/2023'
     ]

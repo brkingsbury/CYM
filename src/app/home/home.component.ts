@@ -1,6 +1,7 @@
 import { OnInit, Component } from '@angular/core';
 import { formatDate } from '@angular/common';
 import { currentOfferings } from '../app.offerings';
+import * as feather from 'feather-icons';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ export class HomeComponent implements OnInit {
   public currentEvents = currentOfferings;
   public upcomingEvents: any = [];
   public showAll = false;
+  public expanded = false;
 
   calendly(event: any) {
     const month = formatDate(event.date, 'yyyy-MM', 'en-US');
@@ -20,6 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    feather.replace();
     // remove days in the past
     this.currentEvents.forEach((item) => {
       var i = item.classDates.length;

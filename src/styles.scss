@@ -67,37 +67,60 @@ main {
     transition: background-color 400ms ease, color 400ms ease;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
+
     &.primary {
         background-color: var(--clr-forest-500);
         color: var(--clr-forest-100);
         border-color: var(--clr-forest-500);
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             background-color: var(--clr-forest-300);
             color: var(--clr-forest-500);
         }
+
         &:focus {
             outline: 2px solid var(--clr-forest-500);
             outline-offset: 2px;
         }
     }
+
     &.secondary {
         background-color: var(--clr-forest-200);
         color: var(--clr-forest-500);
         border-color: var(--clr-forest-500);
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             background-color: var(--clr-forest-500);
             color: var(--clr-forest-100);
         }
+
         &:focus {
             outline: 2px solid var(--clr-forest-500);
             outline-offset: 3px;
         }
 
     }
+
+    &.text {
+        border: none;
+        background-color: transparent;
+        color: var(--clr-forest-500);
+        font-size: .9em;
+        padding: 0.5em 1em;
+
+        &:hover, &:focus {
+            background-color: var(--clr-forest-300);
+        }
+    }
 }
+
 // styling calendly iframe
 .calendly-overlay {
     backdrop-filter: blur(4px);
+
     .calendly-popup-close {
         &:before {
             position: absolute;
