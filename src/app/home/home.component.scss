@@ -26,6 +26,7 @@
         margin: 0 auto;
         padding: 0 1em;
         z-index: 3;
+        line-height: 1.5;
     }
 }
 
@@ -64,6 +65,7 @@
     .name {
         font-size: 1.75em;
         font-family: var(--type-sans);
+        color: var(--clr-forest-500);
         font-weight: 300;
         margin: 0;
     }
