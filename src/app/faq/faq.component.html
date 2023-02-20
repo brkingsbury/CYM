@@ -2,11 +2,17 @@
     <h1 class="page-header">FAQ</h1>
 </header>
 <div class="card">
-    <div class="qa" *ngFor="let faq of questions">
-        <h2 class="question">
-            Q: {{faq.question}}
-        </h2>
-        <p class="answer">A: {{faq.answer}}</p>
+    <div class="qa" *ngFor="let section of faq">
+        <h2 class="subhead">{{section.header}}</h2>
+        <ng-container *ngFor="let question of section.questions">
+            <h3 class="question">
+                Q: {{question.q}}
+            </h3>
+            <p class="answer">
+                A: {{question.a}}
+            </p>
+        </ng-container>
+
     </div>
-    <img src="../../assets/seedling.svg"/>
+    <img src="../../assets/seedling.svg" />
 </div>

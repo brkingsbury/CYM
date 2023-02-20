@@ -26,6 +26,7 @@
                 SIGN UP
             </a>
             <p *ngIf="class.details.dropIn" class="sign-up">DROP IN</p>
+            <p *ngIf="class.details.noLink" class="sign-up"> </p>
 
             <p *ngIf="class.expanded" class="description">
                 {{class.details.description}}

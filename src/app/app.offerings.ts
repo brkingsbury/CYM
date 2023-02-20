@@ -20,6 +20,7 @@ export interface Offerings {
   calendlyUrl?: string;
   comingSoon?: boolean;
   classDates: string[];
+  noLink?: boolean;
 }
 
 export const currentOfferings: Offerings[] = [
@@ -92,33 +93,28 @@ export const currentOfferings: Offerings[] = [
   //     '12/28/2022'
   //   ]
   // },
-  {
-    name: 'Kids Yoga',
-    type: 'Class',
-    ages: '8 - 11',
-    description: "In this class, kids ages 8-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. This class is for kids to attend without their parent/guardian.",
-    time: 9,
-    occurance: 'Saturdays',
-    length: '1 hour',
-    price: '$45 for series / $10 per class (drop in)',
-    color: 'green',
-    location: "Bay View Community Center",
-    address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
-    addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
-    picture: '../assets/kidsyoga.jpg',
-    altText: "An adult and child doing yoga together",
-    signUp: true,
-    learnMore: true,
-    url: 'https://bayviewcenter.org/programs/',
-    classDates: [] = [
-      '01/07/2023',
-      '01/14/2023',
-      '01/21/2023',
-      '01/28/2023',
-      '02/04/2023',
-      '02/11/2023'
-    ]
-  },
+  // {
+  //   name: 'Kids Yoga',
+  //   type: 'Class',
+  //   ages: '8 - 11',
+  //   description: "In this class, kids ages 8-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. This class is for kids to attend without their parent/guardian.",
+  //   time: 9,
+  //   occurance: 'Saturdays',
+  //   length: '1 hour',
+  //   price: '$45 for series / $10 per class (drop in)',
+  //   color: 'green',
+  //   location: "Bay View Community Center",
+  //   address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
+  //   addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
+  //   picture: '../assets/kidsyoga.jpg',
+  //   altText: "An adult and child doing yoga together",
+  //   signUp: true,
+  //   learnMore: true,
+  //   url: 'https://bayviewcenter.org/programs/',
+  //   classDates: [] = [
+  //     '01/07/2023'
+  //   ]
+  // },
   
   {
     name: 'Family Mindfulness Time',
@@ -150,23 +146,28 @@ export const currentOfferings: Offerings[] = [
     ]
   },
   {
-    name: "Yoga for Kids",
+    name: "Family Mindfulness Time",
     type: 'Class',
-    ages: '7-11',
-    description: 'In this class, kids ages 7-11 have the opportunity to practice mindfulness and other social-emotional skills while stretching and strengthening their bodies. This class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. This class is for kids to attend without their parent/guardian.',
-    occurance: '01/14',
+    ages: '0-6',
+    description: "Join us in this 45-minute class for Betty Brinn Children's Museum Members: parents/caregivers and their little ones ages 6 and under! We'll use the tools of yoga and mindfulness to practice skills like connecting with our bodies and feelings, strategies for emotion regulation, and ways to bond and connect with your child. Each class will combine a variety of games, activities, physical yoga poses, meditation and mindfulness techniques, stories, and crafts to help us learn and grow together. We will also take time to build community and make connections with each other. Come have fun and make friends while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!",
+    occurance: 'Select days',
     length: '45min',
     time: 11,
-    price: '$15 for Adventure Rock Members, $20 for Non-Members',
+    price: 'Free for Betty Brinn Members',
     color: 'orange',
-    location: "Adventure Rock - Milwaukee",
-    signUp: true,
+    location: "Betty Brinn Children's Museum",
+    address: '929 E Wisconsin Ave, Milwaukee, WI 53202',
+    addressUrl: 'https://goo.gl/maps/3u9n7Ga11LUdnZpcA',
+    signUp: false,
     learnMore: false,
-    url: 'https://adventurerock.com/yoga/catalog/milwaukee/',
-    picture: '../assets/kids_yoga_1.jpg',
+    noLink: true,
+    picture: '../assets/yb.jpg',
     altText: "Children doing yoga",
     classDates: [] = [
-      '01/14/2023'
+      '03/06/2023',
+      '04/03/2023',
+      '05/01/2023',
+
     ]
   }
   // {

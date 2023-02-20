@@ -1,0 +1,25 @@
+@import '../app.component.scss';
+
+
+.card {
+    font-size: 1.05em;
+}
+
+.contact-list {
+    font-family: var(--type-slab);
+    color: var(--clr-gray);
+    font-size: 1.05em;
+
+    li {
+        line-height: 1.5;
+
+        &::marker {
+            color: var(--clr-forest-500);
+        }
+    }
+}
+
+.link {
+    color: var(--clr-forest-500);
+    font-family: var(--type-sans);
+}

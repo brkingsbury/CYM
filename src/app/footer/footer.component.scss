@@ -2,10 +2,10 @@
 
 footer {
     position: static;
-    margin: 0 1em 1em 0;
-    width: auto;
+    max-width: 1200px;
     text-align: right;
     z-index: 5;
+    margin: 15px auto;
 
     a {
         position: relative;
@@ -34,5 +34,11 @@ footer {
                 color: white;
             }
         }
+    }
+    @media (min-width: 600px) and (max-width: 1260px) {
+        margin: 0 30px;
+    }
+    @media (max-width: 600px) {
+        margin-right: 15px;
     }
 }
