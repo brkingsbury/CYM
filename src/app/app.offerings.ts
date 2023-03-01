@@ -130,7 +130,7 @@ export const currentOfferings: Offerings[] = [
     address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
     picture: '../assets/bvcc.jpg',
-    altText: "An adult and child doing yoga together",
+    altText: "A group of adults and children on yoga mats",
     signUp: false,
     dropIn: true,
     url: '',
@@ -162,33 +162,34 @@ export const currentOfferings: Offerings[] = [
     learnMore: false,
     noLink: true,
     picture: '../assets/yb.jpg',
-    altText: "Children doing yoga",
+    altText: "An adult and child doing yoga together",
     classDates: [] = [
       '03/06/2023',
       '04/03/2023',
       '05/01/2023',
 
     ]
+  },
+  {
+    name: "Yoga for Kids",
+    ages: '7-11',
+    type: 'Series',
+    description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection." + "\n\n" + "Class is for kids only.",
+    length: '45min',
+    time: 16,
+    occurance: 'Starts April 3rd',
+    price: '$14 for Milwaukee residents, $21 for non-residents',
+    color: 'green',
+    location: "Beulah Brinton Community Center",
+    address: '2555 S Bay St, Milwaukee, WI 53207',
+    addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
+    picture: '../assets/y4k.png',
+    altText: "Kids doing yoga",
+    signUp: true,
+    learnMore: true,
+    url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
+    classDates: [] = [
+      '04/03/2023'
+    ]
   }
-  // {
-  //   name: "Yoga Buddies",
-  //   type: 'Series',
-  //   description: "This is a space for little ones, ages 2-5 and one caregiver to practice yoga together. Using the tools of yoga, we will practice skills to handle big feelings. Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help us learn and grow together. Have fun while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!",
-  //   length: '45min',
-  //   time: 16,
-  //   occurance: 'Starts January 23rd',
-  //   price: '30 for Milwaukee residents, 46 for non-residents',
-  //   color: 'mint',
-  //   location: "Beulah Brinton Community Center",
-  //   address: '2555 S Bay St, Milwaukee, WI 53207',
-  //   addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
-  //   picture: '../assets/yb.jpg',
-  //   altText: "An adult and child doing yoga together",
-  //   signUp: false,
-  //   learnMore: true,
-  //   url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=8753b73fee1c2001d2ec2ef446fa5643296e8e5a1d44a55ab30691d4033bf3c9&module=global&keyword=yoga+buddies&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=3&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
-  //   classDates: [] = [
-  //     '01/23/2023'
-  //   ]
-  // }
 ]
