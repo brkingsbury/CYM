@@ -129,20 +129,21 @@ export const currentOfferings: Offerings[] = [
     location: "Bay View Community Center",
     address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
-    picture: '../assets/bvcc.jpg',
+    picture: '../assets/mindfulness.jpg',
     altText: "A group of adults and children on yoga mats",
     signUp: false,
     dropIn: true,
     url: '',
     classDates: [] = [
-      '01/11/2023',
-      '01/25/2023',
-      '02/08/2023',
-      '02/22/2023',
-      '03/08/2023',
-      '03/22/2023',
-      '04/12/2023',
-      '04/26/2023'
+      '04/26/2023',
+      '05/10/2023',
+      '05/24/2023',
+      '06/14/2023',
+      '06/28/2023',
+      '07/12/2023',
+      '07/26/2023',
+      '08/09/2023',
+      '08/23/2023'
     ]
   },
   {
@@ -179,7 +180,7 @@ export const currentOfferings: Offerings[] = [
     time: 16,
     occurance: 'Starts April 3rd',
     price: '$14 for Milwaukee residents, $21 for non-residents',
-    color: 'green',
+    color: 'gold',
     location: "Beulah Brinton Community Center",
     address: '2555 S Bay St, Milwaukee, WI 53207',
     addressUrl: 'https://goo.gl/maps/SsE58GLLf9pQC2MFA',
@@ -191,5 +192,34 @@ export const currentOfferings: Offerings[] = [
     classDates: [] = [
       '04/03/2023'
     ]
-  }
+  },
+  {
+    name: 'Yoga for Kids and Families',
+    type: 'Class',
+    ages: 'all',
+    description: "A yoga class for kids of all ages! Just the kids… or bring the whole family!"
+    + "\n\n" + "Who: Kids ages 2-5 are invited to practice alongside their grown-up(s) while kids ages 6+ are invited to practice without or without an adult present. Each adult is welcome to bring any number of children to practice with (i.e. all siblings welcome)."
+    + "\n\n" + "What: Kids and adults alike will stretch and strengthen their bodies, build confidence and focus, and learn strategies to handle big emotions. Combining traditional yoga practices with fun games and activities, this class is a great opportunity for kids to connect with their bodies and feelings, or for the whole family to bond and reconnect. The first 45 minutes will be physical poses and activities, followed by 15 minutes of an optional art or journaling prompt. Please bring mats if you have them; a limited number of mats are available to borrow.",
+    time: 17,
+    occurance: 'Wednesdays starting May 3rd',
+    length: '1 hour',
+    price: "$5 for individual / $10 for family / $50 for family for all 6 sessions",
+    color: 'green',
+    location: "Bay View Community Center",
+    address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
+    picture: '../assets/ywl_1.jpg',
+    altText: "A group of adults and children on yoga mats",
+    signUp: true,
+    dropIn: false,
+    url: 'https://bayviewcenter.org/programs/',
+    classDates: [] = [
+      '05/03/2023',
+      '05/10/2023',
+      '05/17/2023',
+      '05/31/2023',
+      '06/07/2023',
+      '06/14/2023'
+    ]
+  },
 ]
