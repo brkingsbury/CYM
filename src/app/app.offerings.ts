@@ -137,7 +137,6 @@ export const currentOfferings: Offerings[] = [
     classDates: [] = [
       '04/26/2023',
       '05/10/2023',
-      '05/24/2023',
       '06/14/2023',
       '06/28/2023',
       '07/12/2023',
@@ -212,7 +211,7 @@ export const currentOfferings: Offerings[] = [
     altText: "A group of adults and children on yoga mats",
     signUp: true,
     dropIn: false,
-    url: 'https://events.blackthorn.io/en/15GJ4K6/g/M8Zg8q9jz5/yoga-for-kids-and-families-5a2A4T1prxi/overview',
+    url: 'https://events.blackthorn.io/en/15GJ4K6/g/M8Zg8q9jz5/yoga-for-kids-and-families-5a2A4T1prxk/overview',
     classDates: [] = [
       '05/03/2023',
       '05/10/2023',
