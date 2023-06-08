@@ -3,7 +3,7 @@
 </header>
 
 <div class="card" *ngFor="let class of currentClasses | filterClasses" [ngClass]="class.color">
-    <h2 class="card-header">{{class.name}} <span class="ages">(ages {{class.ages}})</span></h2>
+    <h2 class="card-header">{{class.name}} <span class="ages">(ages: {{class.ages}})</span></h2>
     <div class="card-content">
         <p class="description">{{class.description}}</p>
         <img class="card-photo" src="{{class.picture}}" loading="lazy" alt="{{class.altText}}"/>
