@@ -227,33 +227,33 @@ export const currentOfferings: Offerings[] = [
   //     '04/03/2023'
   //   ]
   // },
-  {
-    name: 'Yoga for Kids and Families',
-    type: 'Class',
-    ages: 'all',
-    description: "A yoga class for kids of all ages! Just the kids… or bring the whole family!"
-    + "\n\n" + "Who: Kids ages 2-5 are invited to practice alongside their grown-up(s) while kids ages 6+ are invited to practice without or without an adult present. Each adult is welcome to bring any number of children to practice with (i.e. all siblings welcome)."
-    + "\n\n" + "What: Kids and adults alike will stretch and strengthen their bodies, build confidence and focus, and learn strategies to handle big emotions. Combining traditional yoga practices with fun games and activities, this class is a great opportunity for kids to connect with their bodies and feelings, or for the whole family to bond and reconnect. The first 45 minutes will be physical poses and activities, followed by 15 minutes of an optional art or journaling prompt. Please bring mats if you have them; a limited number of mats are available to borrow.",
-    time: 17,
-    occurance: 'Wednesday, June 14th',
-    length: '1 hour',
-    price: "$5 for individual / $10 for family",
-    color: 'green',
-    location: "Bay View Community Center",
-    address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
-    addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
-    picture: '../assets/ywl_1.jpg',
-    altText: "A group of adults and children on yoga mats",
-    signUp: true,
-    dropIn: false,
-    url: 'https://events.blackthorn.io/en/15GJ4K6/g/M8Zg8q9jz5/yoga-for-kids-and-families-5a2A4T1prxm/overview',
-    classDates: [] = [
-      '05/03/2023',
-      '05/10/2023',
-      '05/17/2023',
-      '05/31/2023',
-      '06/07/2023',
-      '06/14/2023'
-    ]
-  },
+  // {
+  //   name: 'Yoga for Kids and Families',
+  //   type: 'Class',
+  //   ages: 'all',
+  //   description: "A yoga class for kids of all ages! Just the kids… or bring the whole family!"
+  //   + "\n\n" + "Who: Kids ages 2-5 are invited to practice alongside their grown-up(s) while kids ages 6+ are invited to practice without or without an adult present. Each adult is welcome to bring any number of children to practice with (i.e. all siblings welcome)."
+  //   + "\n\n" + "What: Kids and adults alike will stretch and strengthen their bodies, build confidence and focus, and learn strategies to handle big emotions. Combining traditional yoga practices with fun games and activities, this class is a great opportunity for kids to connect with their bodies and feelings, or for the whole family to bond and reconnect. The first 45 minutes will be physical poses and activities, followed by 15 minutes of an optional art or journaling prompt. Please bring mats if you have them; a limited number of mats are available to borrow.",
+  //   time: 17,
+  //   occurance: 'Wednesday, June 14th',
+  //   length: '1 hour',
+  //   price: "$5 for individual / $10 for family",
+  //   color: 'green',
+  //   location: "Bay View Community Center",
+  //   address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
+  //   addressUrl: 'https://goo.gl/maps/q7uMKQ7ZEjmWigD66',
+  //   picture: '../assets/ywl_1.jpg',
+  //   altText: "A group of adults and children on yoga mats",
+  //   signUp: true,
+  //   dropIn: false,
+  //   url: 'https://events.blackthorn.io/en/15GJ4K6/g/M8Zg8q9jz5/yoga-for-kids-and-families-5a2A4T1prxm/overview',
+  //   classDates: [] = [
+  //     '05/03/2023',
+  //     '05/10/2023',
+  //     '05/17/2023',
+  //     '05/31/2023',
+  //     '06/07/2023',
+  //     '06/14/2023'
+  //   ]
+  // }
 ]
