@@ -28,7 +28,8 @@ export class HomeComponent implements OnInit {
       var i = item.classDates.length;
       while (i--) {
         var d: Date = new Date(item.classDates[i]);
-        d.setHours = item.time.getHours; //needed to not get filtered out until event time
+        let h: number = item.time.getHours();
+        d.setHours(h); //needed to not get filtered out until event time
         if (d < new Date()) {
           item.classDates.splice(i, 1);
         }
