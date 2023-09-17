@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       var i = item.classDates.length;
       while (i--) {
         var d: Date = new Date(item.classDates[i]);
-        d.setHours(item.time); //needed to not get filtered out until event time
+        d.setHours = item.time.getHours; //needed to not get filtered out until event time
         if (d < new Date()) {
           item.classDates.splice(i, 1);
         }
@@ -39,8 +39,10 @@ export class HomeComponent implements OnInit {
     this.currentEvents.forEach((singleClass) => {
       singleClass.classDates.forEach((eventDate) => {
         let d: Date = new Date(eventDate);
-        let t = singleClass.time;
-        d.setHours(t);
+        let hours = singleClass.time.getHours();
+        let minutes = singleClass.time.getMinutes();
+        d.setHours(hours);
+        d.setMinutes(minutes);
         this.upcomingEvents.push({ details: singleClass, date: d });
       });
     });

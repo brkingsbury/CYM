@@ -11,7 +11,7 @@
             <ul *ngIf="!class.comingSoon">
                 <li>
                     <i data-feather="clock"></i>
-                    <p>{{class.occurance}} @ {{ timeCheck(class.time) | date: 'h a'}}
+                    <p>{{class.occurance}} @ {{ timeCheck(class.time) | date: 'h:mm a'}}
                     </p>
                 </li>
                 <li>

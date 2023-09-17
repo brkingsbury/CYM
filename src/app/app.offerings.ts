@@ -3,7 +3,7 @@ export interface Offerings {
   type: string;
   ages: string;
   description?: string;
-  time: number;
+  time: Date;
   occurance?: string;
   length: string;
   price: string;
@@ -29,7 +29,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Class',
     ages: '0 - 6',
     description: "A drop-in hour of mindfulness activities for little ones ages 6 and under and their parents/caregivers! We'll use the tools of yoga and mindfulness to practice skills like connecting with our bodies and feelings, strategies for emotion regulation, and ways to bond and connect with your child. Each class will combine a variety of games, activities, physical yoga poses, meditation and mindfulness techniques, stories, and crafts to help us learn and grow together. We will also take time to build community and make connections with each other. Come have fun and make friends while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life!" + "\n\n" + "No registration necessary - feel free to drop in!" + "\n\n" + "We are currently meeting in Humboldt Park near the corner of Pine and Montana, check social media for any weather updates or cancellations.",
-    time: 11,
+    time: new Date("2024-01-01 11:00"),
     occurance: '2nd & 4th Wednesdays',
     length: '1 hour',
     price: 'FREE!',
@@ -59,7 +59,7 @@ export const currentOfferings: Offerings[] = [
     description: "This class is for kids of all ages – parents/caregivers are welcome to join as well! Each class will combine a variety of yoga poses, meditation and mindfulness practices, games, and activities to help us learn and grow together.",
     occurance: '1st Monday of the month',
     length: '45min',
-    time: 11,
+    time: new Date("2024-01-01 11:00"),
     price: 'Free, for members',
     color: 'orange',
     location: "Betty Brinn Children's Museum",
@@ -84,7 +84,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Class',
     description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow.",
     length: '1 hour',
-    time: 16.5,
+    time: new Date("2024-01-01 16:30"),
     occurance: 'Every Wednesday',
     price: '$18 for nonmembers, free for members',
     color: 'green',
@@ -115,7 +115,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Class',
     description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow. Holly will be joined by her 2-year-old assistant for this class.",
     length: '1 hour',
-    time: 10,
+    time: new Date("2024-01-01 10:00"),
     occurance: 'Every Friday',
     price: '$18 for nonmembers, free for members',
     color: 'green',
@@ -146,7 +146,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Event',
     description: "Join Holly from Cultivate Yoga MKE in this class designed for little ones ages 2 to 6 and their parents/caregivers at Healium Hot Yoga on Sunday August 20th from 3:30-4:30 pm! Kids and their grown-ups will use physical poses, mindfulness practices, and games and activities to practice connecting with their bodies, breath, and with each other. " + "\n\n" + "Each child must attend with at least one adult. $15 per child. Adults are welcome to attend with multiple children - please email info@healiumhotyoga.com to arrange for additional child sign-up and payment. ",
     length: '1 hour',
-    time: 15.5,
+    time: new Date("2024-01-01 15:30"),
     occurance: 'Once',
     price: '$15 per child',
     color: 'gold',
@@ -168,7 +168,7 @@ export const currentOfferings: Offerings[] = [
     type: 'Class',
     description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
     length: '1 hour',
-    time: 17,
+    time: new Date("2024-01-01 17:00"),
     occurance: 'Mondays starting 11/27',
     price: '$10 for residents / $15 for non-residents',
     color: 'gold',
