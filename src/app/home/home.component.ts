@@ -1,5 +1,5 @@
 import { OnInit, Component } from '@angular/core';
-import { formatDate } from '@angular/common';
+// import { formatDate } from '@angular/common';
 import { currentOfferings } from '../app.offerings';
 import * as feather from 'feather-icons';
 
@@ -14,12 +14,12 @@ export class HomeComponent implements OnInit {
   public showAll = false;
   public expanded = false;
 
-  calendly(event: any) {
-    const month = formatDate(event.date, 'yyyy-MM', 'en-US');
-    window.Calendly.initPopupWidget({
-      url: event.details.calendlyUrl + '?hide_gdpr_banner=1&back=1&month=' + month + '&date=' + event.date + '&background_color=F6F9F8&primary_color=335d57'
-    });
-  }
+  // calendly(event: any) {
+  //   const month = formatDate(event.date, 'yyyy-MM', 'en-US');
+  //   window.Calendly.initPopupWidget({
+  //     url: event.details.calendlyUrl + '?hide_gdpr_banner=1&back=1&month=' + month + '&date=' + event.date + '&background_color=F6F9F8&primary_color=335d57'
+  //   });
+  // }
 
   ngOnInit() {
     feather.replace();
