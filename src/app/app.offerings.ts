@@ -55,9 +55,8 @@ export const currentOfferings: Offerings[] = [
   {
     name: "Mindful Member Mondays",
     type: 'Class',
-    ages: 'all',
-    description: "This class is for kids of all ages – parents/caregivers are welcome to join as well! Each class will combine a variety of yoga poses, meditation and mindfulness practices, games, and activities to help us learn and grow together.",
-    occurance: '1st Monday of the month',
+    ages: '0-6',
+    description: "Little ones and their parent/guardian(s) are invited to practice mindfulness through a variety of physical yoga poses, breath practices, stories, games, and activities to cultivate connection with the body, breath, emotions, and each other. All experiences and levels are welcome. This class is only for Betty Brinn members. Space is limited - please register to reserve your spot.",
     length: '45min',
     time: new Date("2024-01-01 11:00"),
     price: 'Free, for members',
@@ -80,7 +79,7 @@ export const currentOfferings: Offerings[] = [
   },
   {
     name: "Yoga for Families",
-    ages: '7-11',
+    ages: 'all ages',
     type: 'Class',
     description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow.",
     length: '1 hour',
@@ -111,9 +110,9 @@ export const currentOfferings: Offerings[] = [
   },
   {
     name: "Yoga for Families",
-    ages: '7-11',
+    ages: 'all ages',
     type: 'Class',
-    description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow. Holly will be joined by her 2-year-old assistant for this class.",
+    description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow." + "\n\n" + "Holly will be joined by her 2-year-old assistant for this class.",
     length: '1 hour',
     time: new Date("2024-01-01 10:00"),
     occurance: 'Every Friday',
