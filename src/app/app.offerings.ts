@@ -78,14 +78,14 @@ export const currentOfferings: Offerings[] = [
     ]
   },
   {
-    name: "Yoga for Families",
+    name: "Family Yoga",
     ages: 'all ages',
     type: 'Class',
     description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow.",
     length: '1 hour',
     time: new Date("2024-01-01 16:30"),
     occurance: 'Every Wednesday',
-    price: '$18 for nonmembers, free for members',
+    price: '$20 for nonmembers, free for members',
     color: 'green',
     location: "Adventure Rock - MKE",
     address: '2220 N Commerce St, Milwaukee, WI 53212',
@@ -109,14 +109,14 @@ export const currentOfferings: Offerings[] = [
     ]
   },
   {
-    name: "Yoga for Families",
+    name: "Family Yoga",
     ages: 'all ages',
     type: 'Class',
     description: "Kids of all ages are invited to practice alongside their adult in this class centered on connecting with our bodies, breath, and with each other. Each class will combine yoga poses, breathing practices, and mindfulness meditation with fun games, activities, stories, and/or crafts. Practicing together, kids and adults alike will work on growing skills like balance, focus, and gratitude. No prior experience is necessary - all ages and abilities are welcome. Mats are available to borrow." + "\n\n" + "Holly will be joined by her 2-year-old assistant for this class.",
     length: '1 hour',
     time: new Date("2024-01-01 10:00"),
     occurance: 'Every Friday',
-    price: '$18 for nonmembers, free for members',
+    price: '$20 for nonmembers, free for members',
     color: 'green',
     location: "Adventure Rock - Walkers Point",
     address: '613 S 2nd St, Milwaukee, WI 53204',
