@@ -34,22 +34,18 @@ export const currentOfferings: Offerings[] = [
     length: '1 hour',
     price: 'FREE!',
     color: 'mint',
-    location: "Humboldt Park (thru Oct)",
-    address: '3000 S Howell Ave, Milwaukee, WI 53207',
-    addressUrl: 'https://goo.gl/maps/saTezqXGuRyEWW818',
+    location: "Bay View Community Center",
+    address: '1320 E Oklahoma Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/edkUAbetnnQ3TMP67',
     picture: '../assets/class-photos/mindfulness.jpg',
     altText: "A group of adults and children on yoga mats",
     signUp: false,
     dropIn: true,
     url: '',
     classDates: [] = [
-      '09/27/2023',
-      '10/11/2023',
-      '10/25/2023',
       '11/08/2023',
-      '11/22/2023',
-      '12/13/2023',
-      '12/27/2023'
+      '11/29/2023',
+      '12/13/2023'
     ]
   },
   {
