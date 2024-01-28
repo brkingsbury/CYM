@@ -71,7 +71,7 @@ export const currentOfferings: Offerings[] = [
     signUp: true,
     learnMore: true,
     noLink: false,
-    url: 'https://bbcmkids.ticketing.veevartapp.com/tickets/view/list?firstevent=mindful-monday',
+    url: 'https://bbcmkids.ticketing.veevartapp.com/tickets/view/list?firstevent=membersonly-mindful-monday',
     picture: '../assets/class-photos/bb_y4families.jpg',
     altText: "An adult doing yoga outside",
     classDates: [] = [
@@ -139,48 +139,48 @@ export const currentOfferings: Offerings[] = [
   //     '12/08/2023'
   //   ]
   // },
-  {
-    name: "Yoga Together",
-    ages: '2-6',
-    type: 'Event',
-    description: "Join Holly from Cultivate Yoga MKE in this class designed for little ones ages 2 to 6 and their parents/caregivers at Healium Hot Yoga on Sunday August 20th from 3:30-4:30 pm! Kids and their grown-ups will use physical poses, mindfulness practices, and games and activities to practice connecting with their bodies, breath, and with each other. " + "\n\n" + "Each child must attend with at least one adult. $15 per child. Adults are welcome to attend with multiple children - please email info@healiumhotyoga.com to arrange for additional child sign-up and payment. ",
-    length: '1 hour',
-    time: new Date("2025-01-01 15:30"),
-    occurance: 'Once',
-    price: '$15 per child',
-    color: 'gold',
-    location: "Healium Hot Yoga",
-    address: '2534 S Kinnickinnic Ave, Milwaukee, WI 53207',
-    addressUrl: 'https://goo.gl/maps/zj45aJbkE4VAWBcHA',
-    picture: '../assets/class-photos/y4p.jpg',
-    altText: "Kids doing yoga",
-    signUp: true,
-    dropIn: false,
-    url: 'https://www.healiumhotyoga.com/happenings/yoga-together-january',
-    classDates: [] = [
-      '01/21/2024'
-    ]
-  },
-  {
-    name: "Yoga for Kids",
-    ages: '7-11',
-    type: 'Class',
-    description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
-    length: '1 hour',
-    time: new Date("2025-01-01 17:00"),
-    occurance: 'Mondays starting 01/22',
-    price: '$10 for residents / $15 for non-residents',
-    color: 'gold',
-    location: "Beulah Brinton Community Center",
-    address: '2555 S Bay St, Milwaukee, WI 53207',
-    addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
-    picture: '../assets/class-photos/y4k.png',
-    altText: "Kids doing yoga",
-    signUp: true,
-    dropIn: false,
-    url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
-    classDates: [] = [
-      '01/22/2024',
-    ]
-  }
+  // {
+  //   name: "Yoga Together",
+  //   ages: '2-6',
+  //   type: 'Event',
+  //   description: "Join Holly from Cultivate Yoga MKE in this class designed for little ones ages 2 to 6 and their parents/caregivers at Healium Hot Yoga on Sunday August 20th from 3:30-4:30 pm! Kids and their grown-ups will use physical poses, mindfulness practices, and games and activities to practice connecting with their bodies, breath, and with each other. " + "\n\n" + "Each child must attend with at least one adult. $15 per child. Adults are welcome to attend with multiple children - please email info@healiumhotyoga.com to arrange for additional child sign-up and payment. ",
+  //   length: '1 hour',
+  //   time: new Date("2025-01-01 15:30"),
+  //   occurance: 'Once',
+  //   price: '$15 per child',
+  //   color: 'gold',
+  //   location: "Healium Hot Yoga",
+  //   address: '2534 S Kinnickinnic Ave, Milwaukee, WI 53207',
+  //   addressUrl: 'https://goo.gl/maps/zj45aJbkE4VAWBcHA',
+  //   picture: '../assets/class-photos/y4p.jpg',
+  //   altText: "Kids doing yoga",
+  //   signUp: true,
+  //   dropIn: false,
+  //   url: 'https://www.healiumhotyoga.com/happenings/yoga-together-january',
+  //   classDates: [] = [
+  //     '01/21/2024'
+  //   ]
+  // },
+  // {
+  //   name: "Yoga for Kids",
+  //   ages: '7-11',
+  //   type: 'Class',
+  //   description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
+  //   length: '1 hour',
+  //   time: new Date("2025-01-01 17:00"),
+  //   occurance: 'Mondays starting 01/22',
+  //   price: '$10 for residents / $15 for non-residents',
+  //   color: 'gold',
+  //   location: "Beulah Brinton Community Center",
+  //   address: '2555 S Bay St, Milwaukee, WI 53207',
+  //   addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
+  //   picture: '../assets/class-photos/y4k.png',
+  //   altText: "Kids doing yoga",
+  //   signUp: true,
+  //   dropIn: false,
+  //   url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
+  //   classDates: [] = [
+  //     '01/22/2024',
+  //   ]
+  // }
 ]
