@@ -139,28 +139,28 @@ export const currentOfferings: Offerings[] = [
   //     '12/08/2023'
   //   ]
   // },
-  // {
-  //   name: "Yoga Together",
-  //   ages: '2-6',
-  //   type: 'Event',
-  //   description: "Join Holly from Cultivate Yoga MKE in this class designed for little ones ages 2 to 6 and their parents/caregivers at Healium Hot Yoga on Sunday August 20th from 3:30-4:30 pm! Kids and their grown-ups will use physical poses, mindfulness practices, and games and activities to practice connecting with their bodies, breath, and with each other. " + "\n\n" + "Each child must attend with at least one adult. $15 per child. Adults are welcome to attend with multiple children - please email info@healiumhotyoga.com to arrange for additional child sign-up and payment. ",
-  //   length: '1 hour',
-  //   time: new Date("2025-01-01 15:30"),
-  //   occurance: 'Once',
-  //   price: '$15 per child',
-  //   color: 'gold',
-  //   location: "Healium Hot Yoga",
-  //   address: '2534 S Kinnickinnic Ave, Milwaukee, WI 53207',
-  //   addressUrl: 'https://goo.gl/maps/zj45aJbkE4VAWBcHA',
-  //   picture: '../assets/class-photos/y4p.jpg',
-  //   altText: "Kids doing yoga",
-  //   signUp: true,
-  //   dropIn: false,
-  //   url: 'https://www.healiumhotyoga.com/happenings/yoga-together-january',
-  //   classDates: [] = [
-  //     '01/21/2024'
-  //   ]
-  // },
+  {
+    name: "Yoga Together",
+    ages: '2-6',
+    type: 'Event',
+    description: "Join Holly from Cultivate Yoga MKE in this class designed for little ones ages 2 to 6 and their parents/caregivers at Healium Hot Yoga on Sunday August 20th from 3:30-4:30 pm! Kids and their grown-ups will use physical poses, mindfulness practices, and games and activities to practice connecting with their bodies, breath, and with each other. " + "\n\n" + "Each child must attend with at least one adult. $15 per child. Adults are welcome to attend with multiple children - please email info@healiumhotyoga.com to arrange for additional child sign-up and payment. ",
+    length: '1 hour',
+    time: new Date("2025-03-24 15:30"),
+    occurance: 'Once',
+    price: '$15 per child',
+    color: 'gold',
+    location: "Healium Hot Yoga",
+    address: '2534 S Kinnickinnic Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://goo.gl/maps/zj45aJbkE4VAWBcHA',
+    picture: '../assets/class-photos/y4p.jpg',
+    altText: "Kids doing yoga",
+    signUp: true,
+    dropIn: false,
+    url: 'https://www.healiumhotyoga.com/happenings/yogatogethermarch',
+    classDates: [] = [
+      '03/24/2024'
+    ]
+  }
   // {
   //   name: "Yoga for Kids",
   //   ages: '7-11',
