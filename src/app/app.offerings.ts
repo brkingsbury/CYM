@@ -160,27 +160,27 @@ export const currentOfferings: Offerings[] = [
     classDates: [] = [
       '03/24/2024'
     ]
+  },
+  {
+    name: "Yoga for Kids",
+    ages: '7-11',
+    type: 'Class',
+    description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
+    length: '1 hour',
+    time: new Date("2025-01-01 17:00"),
+    occurance: 'Mondays starting 04/01',
+    price: '$14 for residents / $21 for non-residents',
+    color: 'gold',
+    location: "Beulah Brinton Community Center",
+    address: '2555 S Bay St, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
+    picture: '../assets/class-photos/y4k.png',
+    altText: "Kids doing yoga",
+    signUp: true,
+    dropIn: false,
+    url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
+    classDates: [] = [
+      '04/01/2024',
+    ]
   }
-  // {
-  //   name: "Yoga for Kids",
-  //   ages: '7-11',
-  //   type: 'Class',
-  //   description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
-  //   length: '1 hour',
-  //   time: new Date("2025-01-01 17:00"),
-  //   occurance: 'Mondays starting 01/22',
-  //   price: '$10 for residents / $15 for non-residents',
-  //   color: 'gold',
-  //   location: "Beulah Brinton Community Center",
-  //   address: '2555 S Bay St, Milwaukee, WI 53207',
-  //   addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
-  //   picture: '../assets/class-photos/y4k.png',
-  //   altText: "Kids doing yoga",
-  //   signUp: true,
-  //   dropIn: false,
-  //   url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
-  //   classDates: [] = [
-  //     '01/22/2024',
-  //   ]
-  // }
 ]
