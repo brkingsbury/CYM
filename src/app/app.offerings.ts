@@ -55,37 +55,37 @@ export const currentOfferings: Offerings[] = [
   //     '05/22/2024'
   //   ]
   // },
-  {
-    name: "Mindful Mondays",
-    type: 'Class',
-    ages: '0-6',
-    description: "This class is for kids of all ages – parents/caregivers are encouraged to join as well! Each class will combine a variety of yoga poses, meditation and mindfulness practices, games, and activities to help us learn and grow together. This event will be held outdoors in Museum Center Park, weather-permitting. Participants are encouraged to bring yoga mats or blankets, sunscreen, and water.",
-    length: '45min',
-    occurance: 'Every Monday',
-    time: new Date("2025-01-01 10:00"),
-    price: 'Free, for members',
-    color: 'orange',
-    location: "Betty Brinn Children's Museum",
-    address: '929 E Wisconsin Ave, Milwaukee, WI 53202',
-    addressUrl: 'https://goo.gl/maps/3u9n7Ga11LUdnZpcA',
-    signUp: true,
-    learnMore: true,
-    noLink: false,
-    url: 'https://bbcmkids.ticketing.veevartapp.com/tickets/view/list?firstevent=membersonly-mindful-monday',
-    picture: '../assets/class-photos/bb_y4families.jpg',
-    altText: "An adult doing yoga outside",
-    classDates: [] = [
-      '06/17/2024',
-      '06/24/2024',
-      '07/01/2024',
-      '07/08/2024',
-      '07/22/2024',
-      '07/29/2024',
-      '08/05/2024',
-      '08/12/2024'
+  // {
+  //   name: "Mindful Mondays",
+  //   type: 'Class',
+  //   ages: '0-6',
+  //   description: "This class is for kids of all ages – parents/caregivers are encouraged to join as well! Each class will combine a variety of yoga poses, meditation and mindfulness practices, games, and activities to help us learn and grow together. This event will be held outdoors in Museum Center Park, weather-permitting. Participants are encouraged to bring yoga mats or blankets, sunscreen, and water.",
+  //   length: '45min',
+  //   occurance: 'Every Monday',
+  //   time: new Date("2025-01-01 10:00"),
+  //   price: 'Free, for members',
+  //   color: 'orange',
+  //   location: "Betty Brinn Children's Museum",
+  //   address: '929 E Wisconsin Ave, Milwaukee, WI 53202',
+  //   addressUrl: 'https://goo.gl/maps/3u9n7Ga11LUdnZpcA',
+  //   signUp: true,
+  //   learnMore: true,
+  //   noLink: false,
+  //   url: 'https://bbcmkids.ticketing.veevartapp.com/tickets/view/list?firstevent=membersonly-mindful-monday',
+  //   picture: '../assets/class-photos/bb_y4families.jpg',
+  //   altText: "An adult doing yoga outside",
+  //   classDates: [] = [
+  //     '06/17/2024',
+  //     '06/24/2024',
+  //     '07/01/2024',
+  //     '07/08/2024',
+  //     '07/22/2024',
+  //     '07/29/2024',
+  //     '08/05/2024',
+  //     '08/12/2024'
       
-    ]
-  },
+  //   ]
+  // },
   {
     name: "Family Yoga",
     ages: 'all ages',
@@ -113,6 +113,74 @@ export const currentOfferings: Offerings[] = [
       // '11/13/2024',
       // '12/11/2024'
 
+    ]
+  },
+  {
+    name: "Family Yoga",
+    ages: '5 and under',
+    type: 'Class',
+    description: "Yoga and mindfulness activities for little ones and their parents/caregivers! We'll use the tools of yoga to practice skills like connecting with our bodies and feelings, strategies for emotion regulation, and ways to bond and connect with your child. Each class will combine a variety of games, activities, physical yoga poses, meditation and mindfulness techniques, stories, and crafts to help us learn and grow together. Come have fun and make friends while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life! Please bring mats if you have them.",
+    length: '1 hour',
+    time: new Date("2025-01-01 10:45"),
+    // occurance: '2nd Wednesdays',
+    price: 'Free',
+    color: 'gold',
+    location: "Tippecanoe Library",
+    address: '3912 S Howell Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/vszkqE6Wmf86zsyM6',
+      picture: '../assets/class-photos/mindfulness.jpg',
+      altText: "A group of adults and children on yoga mats",
+    signUp: false,
+    dropIn: true,
+    url: 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c08634b933d345eaab99e85e3b7858d3&random=65072821480c7&iframeid=&mode=p',
+    classDates: [] = [
+      '08/21/2024',
+      '08/28/2024',
+    ]
+  }, 
+  {
+    name: "Family Yoga",
+    ages: '7 and under',
+    type: 'popup',
+    description: "Yoga and mindfulness activities for little ones and their parents/caregivers! We'll use the tools of yoga to practice skills like connecting with our bodies and feelings, strategies for emotion regulation, and ways to bond and connect with your child. Each class will combine a variety of games, activities, physical yoga poses, meditation and mindfulness techniques, stories, and crafts to help us learn and grow together. Come have fun and make friends while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life! Please bring mats if you have them.",
+    length: '1 hour',
+    time: new Date("2025-01-01 10:30"),
+    // occurance: '2nd Wednesdays',
+    price: 'Free',
+    color: 'gold',
+    location: "Tippecanoe Library",
+    address: '3912 S Howell Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/vszkqE6Wmf86zsyM6',
+      picture: '../assets/class-photos/mindfulness.jpg',
+      altText: "A group of adults and children on yoga mats",
+    signUp: false,
+    dropIn: true,
+    url: 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c08634b933d345eaab99e85e3b7858d3&random=65072821480c7&iframeid=&mode=p',
+    classDates: [] = [
+      '09/27/2024',
+    ]
+  }, 
+  
+  {
+    name: "Family Yoga",
+    ages: '7 and under',
+    type: 'popup',
+    description: "Yoga and mindfulness activities for little ones and their parents/caregivers! We'll use the tools of yoga to practice skills like connecting with our bodies and feelings, strategies for emotion regulation, and ways to bond and connect with your child. Each class will combine a variety of games, activities, physical yoga poses, meditation and mindfulness techniques, stories, and crafts to help us learn and grow together. Come have fun and make friends while deepening your relationship and gaining new tools to handle the ups and downs of toddler and preschool life! Please bring mats if you have them.",
+    length: '1 hour',
+    time: new Date("2025-01-01 10:00"),
+    // occurance: '2nd Wednesdays',
+    price: 'Free',
+    color: 'gold',
+    location: "Tippecanoe Library",
+    address: '3912 S Howell Ave, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/vszkqE6Wmf86zsyM6',
+      picture: '../assets/class-photos/mindfulness.jpg',
+      altText: "A group of adults and children on yoga mats",
+    signUp: false,
+    dropIn: true,
+    url: 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c08634b933d345eaab99e85e3b7858d3&random=65072821480c7&iframeid=&mode=p',
+    classDates: [] = [
+      '10/12/2024',
     ]
   },
   // {
@@ -168,26 +236,26 @@ export const currentOfferings: Offerings[] = [
   //     '03/24/2024'
   //   ]
   // },
-  // {
-  //   name: "Yoga for Kids",
-  //   ages: '7-11',
-  //   type: 'Class',
-  //   description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
-  //   length: '1 hour',
-  //   time: new Date("2025-01-01 17:00"),
-  //   occurance: 'Mondays starting 04/01',
-  //   price: '$14 for residents / $21 for non-residents',
-  //   color: 'gold',
-  //   location: "Beulah Brinton Community Center",
-  //   address: '2555 S Bay St, Milwaukee, WI 53207',
-  //   addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
-  //   picture: '../assets/class-photos/y4k.png',
-  //   altText: "Kids doing yoga",
-  //   signUp: true,
-  //   dropIn: false,
-  //   url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
-  //   classDates: [] = [
-  //     '04/01/2024',
-  //   ]
-  // }
+  {
+    name: "Yoga for Kids",
+    ages: '7-11',
+    type: 'Class',
+    description: "This class provides an opportunity for kids to move their bodies, release some energy, and relax their minds after a long day of learning at school! Each class will combine yoga poses (asana) and breathing techniques (pranayama) with fun games and activities to help kids strengthen physical and emotional skills alike. No prior experience is necessary - all are welcome to join us as we work on building confidence, appreciating our unique gifts, and fostering connection. Class is for kids only.",
+    length: '1 hour',
+    time: new Date("2025-01-01 16:45"),
+    occurance: 'Mondays starting 09/23',
+    price: '$19 for residents / $29 for non-residents',
+    color: 'orange',
+    location: "Beulah Brinton Community Center",
+    address: '2555 S Bay St, Milwaukee, WI 53207',
+    addressUrl: 'https://maps.app.goo.gl/pBxFA38uXFcSZLAj8',
+    picture: '../assets/class-photos/y4k.png',
+    altText: "Kids doing yoga",
+    signUp: true,
+    dropIn: false,
+    url: 'https://web2.myvscloud.com/wbwsc/wimilwaukeewt.wsc/search.html?Action=Start&SubAction=&_csrf_token=58dc32e4f06736bec4c9a41fb20eeec51ed43e8a77f5a1084276da77b594ed8e&module=global&keyword=Yoga+for+Kids&keywordoption=Match+All&spotsavailable=&dayoption=All&timeblock=&beginyear=&display=Detail&search=yes&page=1&multiselectlist_value=&globalwebsearch_buttonsearch=yes',
+    classDates: [] = [
+      '09/23/2024',
+    ]
+  }
 ]
